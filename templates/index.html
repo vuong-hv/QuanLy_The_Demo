@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nhập POS</title>
+    <meta name="theme-color" content="#0d6efd">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="QuanLyNH">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="manifest" href="{{ pwa_manifest_url }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='finance-icon-180.png') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.bootstrap5.css" rel="stylesheet">
+    <style>
+        :root {
+            --surface: #ffffff;
+            --page-bg: linear-gradient(180deg, #eef4ff 0%, #f6f7fb 52%, #eef2f7 100%);
+            --radius: 20px;
+        }
+        body {
+            min-height: 100vh;
+            background: var(--page-bg);
+            font-size: clamp(14px, 1.2vw, 16px);
+        }
+        .page-shell {
+            width: min(100%, 980px);
+            margin: 0 auto;
+        }
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 0.6rem;
+        }
+        .btn-nav {
+            min-height: 68px;
+            font-size: clamp(0.76rem, 2vw, 0.92rem);
+            font-weight: 700;
+            line-height: 1.15;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .entry-card {
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(13, 110, 253, 0.08);
+            border-radius: var(--radius);
+            padding: 1.1rem;
+            box-shadow: 0 16px 40px rgba(31, 56, 88, 0.12);
+        }
+        .entry-card label {
+            margin-bottom: 0.35rem;
+        }
+        .form-control,
+        .form-select,
+        .ts-control {
+            min-height: 48px;
+            border-radius: 14px;
+        }
+        .input-money,
+        .input-red {
+            font-weight: 700;
+            font-size: clamp(1.15rem, 4vw, 1.45rem) !important;
+        }
+        .input-money { color: #198754; }
+        .input-red {
+            color: #dc3545;
+            background-color: #fff5f5 !important;
+        }
+        .submit-btn {
+            border-radius: 16px;
+        }
+        @media (max-width: 575.98px) {
+            body {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            .quick-nav {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .entry-card {
+                padding: 0.9rem;
+                border-radius: 18px;
+            }
+        }
+    </style>
+</head>
+<body class="container-fluid py-3 py-md-4">
+    <div class="page-shell">
+    <div class="quick-nav mb-3">
+        <a href="/summary" class="btn btn-success btn-nav shadow-sm">🧾 Tổng kết</a>
+        <a href="/report_cty" class="btn btn-primary btn-nav shadow-sm">📊 CTY</a>
+        <a href="/all_transactions" class="btn btn-danger btn-nav shadow-sm">🏢 Tổng hợp</a>
+        <a href="/company_transfers" class="btn btn-warning btn-nav shadow-sm">🏦 Tiền Về</a>
+        <a href="/retail_customers" class="btn btn-info btn-nav shadow-sm">💳 KHÁCH</a>
+        <a href="/settings" class="btn btn-dark btn-nav shadow-sm">⚙️ CÀI</a>
+    </div>
+    <div class="entry-card">
+        <form action="/submit" method="post">
+            <div class="mb-2"><label class="small fw-bold">Ngày</label><input type="date" name="chi_tiet_ngay" id="today" class="form-control" required></div>
+            <div class="mb-2"><label class="small fw-bold">Công ty</label><select name="ten_cong_ty" id="sel-company" required><option value="">Chọn Công ty...</option>{% for ten in companies %}<option value="{{ten}}">{{ten}}</option>{% endfor %}</select></div>
+            <div class="mb-2"><label class="small fw-bold">Máy POS</label><select name="may_pos" id="sel-pos" required><option value="">Chọn Máy...</option>{% for m in may_pos_data %}<option value="{{m['Máy POS']}}" data-company="{{m['Tên Công ty']}}" data-fee="{{m['Phí Công Ty']}}">{{m['Tên Công ty']}} - {{m['Máy POS']}}</option>{% endfor %}</select></div>
+            <div class="row g-2">
+                <div class="col-12 col-sm-6 mb-2"><label class="small fw-bold">Lô</label><input type="text" name="so_lo" class="form-control" required></div>
+                <div class="col-12 col-sm-6 mb-2"><label class="small fw-bold">Phí Công ty %</label><input type="number" step="0.01" name="bieu_phi" id="fee" class="form-control" value="1.09" oninput="autoCalc()"></div>
+            </div>
+            <div class="mb-2"><label class="small fw-bold">Số tiền</label><input type="text" name="doanh_thu" id="amt" class="form-control input-money" oninput="formatAndCalc(this)" placeholder="0" required inputmode="numeric"></div>
+            <div class="mb-2"><label class="small fw-bold text-danger">Số tiền giao dịch</label><input type="text" name="ck_khach" id="after" class="form-control input-red" oninput="formatCur(this)" placeholder="0" inputmode="numeric"></div>
+            <button type="submit" class="btn btn-success submit-btn w-100 py-3 fw-bold shadow">LƯU GIAO DỊCH</button>
+        </form>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+    <script src="{{ url_for('static', filename='money-input.js') }}?v=20260511"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/static/sw.js');
+            });
+        }
+        document.getElementById('today').valueAsDate = new Date();
+        function parseMoney(value) {
+            return MoneyInput.parse(value);
+        }
+        function formatAndCalc(input) { formatCur(input); autoCalc(); }
+        function autoCalc() {
+            let a = parseMoney(document.getElementById('amt').value);
+            let f = parseFloat(document.getElementById('fee').value) || 0;
+            document.getElementById('after').value = a > 0 ? MoneyInput.formatDigits(String(Math.round(a - (a * f/100)))) : "";
+        }
+        const machineData = [
+            {% for m in may_pos_data %}
+            {
+                company: {{ m['Tên Công ty'] | tojson }},
+                machine: {{ m['Máy POS'] | tojson }},
+                fee: {{ m['Phí Công Ty'] | tojson }}
+            }{% if not loop.last %},{% endif %}
+            {% endfor %}
+        ];
+        let posSelect;
+        const companySelect = new TomSelect("#sel-company", {
+            create: false,
+            onChange: function(company) {
+                updateMachines(company);
+            }
+        });
+
+        function optionForMachine(machine) {
+            return {
+                value: machine.machine,
+                text: machine.company + ' - ' + machine.machine,
+                fee: machine.fee,
+                company: machine.company
+            };
+        }
+
+        function updateMachines(company) {
+            if (!posSelect) return;
+            posSelect.clear(true);
+            posSelect.clearOptions();
+            machineData
+                .filter(function(machine) { return machine.company === company; })
+                .map(optionForMachine)
+                .forEach(function(option) { posSelect.addOption(option); });
+            posSelect.refreshOptions(false);
+        }
+
+        posSelect = new TomSelect("#sel-pos", {
+            create: false,
+            valueField: 'value',
+            labelField: 'text',
+            searchField: ['text'],
+            options: [],
+            onChange: function(v) {
+                let f = this.options[v] && this.options[v].fee;
+                if(f) { document.getElementById('fee').value = f; autoCalc(); }
+            }
+        });
+        updateMachines(companySelect.getValue());
+    </script>
+</body>
+</html>

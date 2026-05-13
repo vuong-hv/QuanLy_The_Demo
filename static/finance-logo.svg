@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="56" y1="40" x2="456" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B4D78"/>
+      <stop offset="1" stop-color="#072D47"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="125" y1="112" x2="391" y2="406" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8D56B"/>
+      <stop offset="1" stop-color="#E8A63A"/>
+    </linearGradient>
+    <linearGradient id="bars" x1="164" y1="152" x2="348" y2="338" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D9F1FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="24" width="464" height="464" rx="108" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="146" fill="url(#coin)"/>
+  <circle cx="256" cy="256" r="128" stroke="#FFF1B8" stroke-width="8" opacity="0.8"/>
+
+  <rect x="172" y="256" width="40" height="92" rx="12" fill="url(#bars)"/>
+  <rect x="236" y="214" width="40" height="134" rx="12" fill="url(#bars)"/>
+  <rect x="300" y="176" width="40" height="172" rx="12" fill="url(#bars)"/>
+
+  <path d="M166 212C190.667 212 209.333 199.333 222 174C236 147.333 257 136 285 140C311 143.333 334.333 132.667 355 108" stroke="#0B4D78" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M329 106H374V151" stroke="#0B4D78" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="386" cy="122" r="16" fill="#F8D56B" opacity="0.9"/>
+  <path d="M102 378C145 332.667 186.667 310 227 310C265 310 306.333 328 351 364" stroke="#8CD3FF" stroke-width="14" stroke-linecap="round" opacity="0.45"/>
+</svg>

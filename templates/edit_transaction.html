@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sửa giao dịch</title>
+    <meta name="theme-color" content="#ffc107">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="QuanLyNH">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="manifest" href="{{ pwa_manifest_url }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='finance-icon-180.png') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style> 
+        body { background-color: #f0f2f5; font-size: 14px; } 
+        .card { border-radius: 12px; border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        label { font-weight: bold; font-size: 12px; color: #555; margin-bottom: 2px; }
+    </style>
+</head>
+<body class="container py-3">
+    <div class="card p-3">
+        <h5 class="text-center text-warning fw-bold mb-3">SỬA CHI TIẾT GIAO DỊCH</h5>
+        
+        <form action="/update_transaction" method="post">
+            <!-- CÁC BIẾN ẨN ĐỂ QUẢN LÝ DỮ LIỆU -->
+            <input type="hidden" name="index" value="{{ row.index }}">
+            <input type="hidden" name="ret_mode" value="{{ ret_mode }}">
+            <input type="hidden" name="ret_date" value="{{ ret_date }}">
+            <input type="hidden" name="ret_from_date" value="{{ ret_from_date }}">
+            <input type="hidden" name="ret_to_date" value="{{ ret_to_date }}">
+            <input type="hidden" name="ret_chu" value="{{ ret_chu }}">
+            <input type="hidden" name="ret_cty" value="{{ ret_cty }}">
+            <input type="hidden" name="ret_may" value="{{ ret_may }}">
+            
+            <!-- SỬA NGÀY THÁNG -->
+            <div class="mb-3">
+                <label>Ngày giao dịch:</label>
+                <input type="date" name="chi_tiet_ngay" class="form-control" value="{{ row['Chi tiết ngày tháng'] }}" required>
+            </div>
+
+            <!-- SỬA CHỦ POS -->
+            <div class="mb-3">
+                <label>Tên Chủ POS:</label>
+                <select name="ten_chu_pos" class="form-select shadow-sm" required>
+                    {% for ten in chu_pos_list %}
+                    <option value="{{ ten }}" {% if row['Tên Chủ POS'] == ten %}selected{% endif %}>{{ ten }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- SỬA MÁY POS -->
+            <div class="mb-3">
+                <label>Máy POS (Gán lại Công ty):</label>
+                <select name="may_pos" id="edit-pos" class="form-select shadow-sm" required>
+                    {% for m in may_pos %}
+                    <option value="{{ m['Máy POS'] }}" 
+                            data-fee="{{ m['Phí Công Ty'] }}" 
+                            {% if row['Máy POS'] == m['Máy POS'] %}selected{% endif %}>
+                        {{ m['Tên Công ty'] }} - {{ m['Máy POS'] }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label>Số Lô:</label>
+                    <input type="text" name="so_lo" class="form-control shadow-sm" value="{{ row['Số Lô'] }}">
+                </div>
+                <div class="col-6 mb-3">
+                    <label class="text-primary">Phí Chủ POS %:</label>
+                    <input type="number" step="0.001" name="bieu_phi" id="edit-fee" class="form-control fw-bold border-primary shadow-sm" value="{{ row['Biểu phí khách %']|replace('%','') }}">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="text-success">Số tiền:</label>
+                <input type="text" name="so_tien" id="edit-amount" class="form-control fw-bold border-success shadow-sm" value="{{ "{:,.0f}".format(row['Số tiền']) }}" inputmode="numeric" required>
+            </div>
+
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-warning w-100 fw-bold shadow">CẬP NHẬT THAY ĐỔI</button>
+                {% if ret_mode == 'all_transactions' %}
+                <a href="/all_transactions?from_date={{ ret_from_date | urlencode }}&to_date={{ ret_to_date | urlencode }}&chu_pos={{ ret_chu | urlencode }}&cong_ty={{ ret_cty | urlencode }}&may_pos={{ ret_may | urlencode }}" class="btn btn-secondary w-50">Hủy</a>
+                {% else %}
+                <a href="/report_cty?from_date={{ ret_from_date | urlencode }}&to_date={{ ret_to_date | urlencode }}&cong_ty={{ ret_cty | urlencode }}" class="btn btn-secondary w-50">Hủy</a>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='money-input.js') }}?v=20260511"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/static/sw.js');
+            });
+        }
+        // Tự động cập nhật phí khi chọn máy khác
+        document.getElementById('edit-pos').addEventListener('change', function() {
+            let selected = this.options[this.selectedIndex];
+            let fee = selected.getAttribute('data-fee');
+            if(fee) document.getElementById('edit-fee').value = fee;
+        });
+
+        const amountInput = document.getElementById('edit-amount');
+        amountInput.addEventListener('input', function() {
+            MoneyInput.formatInput(this);
+        });
+    </script>
+</body>
+</html>

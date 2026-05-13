@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Báo cáo Chủ POS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style> body { background-color: #f0f2f5; font-size: 14px; } @media (max-width: 768px) { body { font-size: 10px; } .money { font-size: 10px; } } .money { text-align: right; font-weight: bold; white-space: nowrap; } .table thead th { background-color: #0d6efd !important; color: white; text-align: center; vertical-align: middle; white-space: nowrap; position: sticky; top: 0; z-index: 10; cursor: help; padding: 10px 5px; } .total-row td { color: #198754 !important; font-weight: 900 !important; background-color: #f8f9fa !important; border-top: 2px solid #198754 !important; border-bottom: 2px solid #198754 !important; font-size: 1.1em; } .note-cell { min-width: 140px; background-color: #fff9db; border-left: 1px solid #dee2e6; } </style>
+</head>
+<body class="container-fluid py-2">
+    <div class="d-flex justify-content-between align-items-center mb-2 bg-white p-2 rounded shadow-sm">
+        <h6 class="text-primary fw-bold m-0">📊 TỔNG HỢP THEO CHỦ</h6>
+        <a href="/" class="btn btn-sm btn-primary py-0 px-3 shadow-sm">Quay lại</a>
+    </div>
+    
+    <div class="card p-2 mb-2 border-0 shadow-sm">
+        <form action="/report_chu" method="get" id="filter-form" class="row g-1">
+            <div class="col-4"><input type="date" name="date" class="form-control form-control-sm" value="{{sel_date}}" style="font-size: 10px;"></div>
+            <div class="col-4"><select name="chu_pos" id="chu-select" class="form-select form-select-sm" style="font-size: 10px;">
+                <option value="Tất cả">-- Chủ --</option>{% for c in list_chu %}<option value="{{c}}" {% if sel_chu==c %}selected{% endif %}>{{c}}</option>{% endfor %}
+            </select></div>
+            <div class="col-4"><select name="may_pos" id="may-select" class="form-select form-select-sm" style="font-size: 10px;">
+                <option value="Tất cả">-- Máy --</option>
+            </select></div>
+            <div class="col-12 mt-1"><button type="submit" class="btn btn-success btn-sm w-100 fw-bold py-1">LỌC DỮ LIỆU</button></div>
+        </form>
+    </div>
+
+    {% if owner_summary %}
+    <div class="card p-2 mb-2 border-0 shadow-sm bg-light">
+        <h6 class="text-dark fw-bold mb-1" style="font-size: 12px;">Bảng tổng hợp theo Chủ:</h6>
+        <div class="table-responsive">
+            <table class="table table-sm table-bordered bg-white mb-0" style="font-size: 11px;">
+                <thead class="table-dark">
+                    <tr><th>Tên Chủ POS</th><th>Tổng Quẹt</th><th>Lợi nhuận</th><th>Sau phí K</th><th>Thực chuyển</th><th>Còn lại</th></tr>
+                </thead>
+                <tbody>
+                    {% for s in owner_summary %}
+                    <tr>
+                        <td class="fw-bold">{{ s['Tên Chủ POS'] }}</td>
+                        <td class="money">{{ "{:,.0f}".format(s['Số tiền']) }}</td>
+                        <td class="money text-success">{{ "{:,.0f}".format(s['Lãi/Lỗ']) }}</td>
+                        <td class="money">{{ "{:,.0f}".format(s['Thành tiền sau phí']) }}</td>
+                        <td class="money text-primary">{{ "{:,.0f}".format(s['Thực chuyển']) }}</td>
+                        <td class="money text-danger">{{ "{:,.0f}".format(s['Thành tiền sau phí'] - s['Thực chuyển']) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="table-container bg-white rounded shadow-sm overflow-hidden">
+        <div class="table-responsive">
+            <table class="table table-sm table-bordered table-hover mb-0">
+                <thead><tr><th>Sửa</th><th>Ngày</th><th>Chủ</th><th>Server</th><th>Máy</th><th>Lô</th><th title="Lãi = Phí thu khách - Phí trả Cty">Lợi nhuận</th><th>Tiền quẹt</th><th>Phí thu khách</th><th>Sau phí khách</th><th>Thực chuyển</th><th>Ghi chú</th></tr></thead>
+                <tbody>
+                    {% for item in report_data %}
+                    <tr class="{% if item.is_total %}total-row{% endif %}">
+                        <td class="text-center">{% if not item.is_total %}<a href="/edit_transaction/{{ item.idx }}?ret_date={{sel_date}}&ret_chu={{sel_chu}}" class="text-success text-decoration-none">✎</a>{% endif %}</td>
+                        <td class="text-center">{{ item.row['Chi tiết ngày tháng'] if not item.is_total else 'TỔNG' }}</td>
+                        <td class="small">{{ item.row['Tên Chủ POS'] if not item.is_total else '' }}</td>
+                        <td class="small">{{ item.row['Tên Công ty'] if not item.is_total else '' }}</td>
+                        <td class="small">{{ item.row['Máy POS'] }}</td><td class="text-center">{{ item.row['Số Lô'] }}</td>
+                        <td class="money {% if item.val.lai_lo < 0 %}text-danger{% endif %}">{{ "{:,.0f}".format(item.val.lai_lo) }}</td>
+                        <td class="money">{{ "{:,.0f}".format(item.val.so_tien) }}</td>
+                        <td class="money text-muted">{{ "{:,.0f}".format(item.val.phi_k) }}</td>
+                        <td class="money">{{ "{:,.0f}".format(item.val.sau_phi_k) }}</td>
+                        <td class="money text-primary">{{ "{:,.0f}".format(item.val.thuc_chuyen) }}
+                            {% if not item.is_total %}<br><a href="javascript:void(0)" class="text-success text-decoration-none" style="font-size:9px" onclick="showT('{{item.key}}')">+Cộng</a>
+                            <form action="/add_transfer" method="post" id="t-{{item.key}}" style="display:none;"><input type="hidden" name="key" value="{{item.key}}"><input type="text" name="amount_to_add" class="form-control form-control-sm mb-1" oninput="formatCur(this)" placeholder="0"><button class="btn btn-success btn-sm w-100 py-0">Ok</button></form>{% endif %}
+                        </td>
+                        <td class="note-cell small">
+                            {% if not item.is_total %}
+                            <div id="d-{{item.key}}" class="d-flex justify-content-between align-items-start"><span>{{item.note}}</span><button class="btn btn-warning btn-sm py-0 px-1" onclick="openE('{{item.key}}')">✎</button></div>
+                            <form action="/save_note" method="post" id="f-{{item.key}}" style="display:none;"><input type="hidden" name="key" value="{{item.key}}"><textarea name="note" class="form-control form-control-sm mb-1">{{item.note}}</textarea><button class="btn btn-success btn-sm w-100 py-0">Lưu</button></form>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        const ownerMap = {{ owner_map | tojson }};
+        const selMay = "{{ sel_may }}";
+        const chuSelect = document.getElementById('chu-select');
+        const maySelect = document.getElementById('may-select');
+
+        function updateMachines(owner) {
+            maySelect.innerHTML = '';
+            if (owner === "Tất cả") {
+                let opt = new Option("-- Máy --", "Tất cả"); maySelect.add(opt);
+                let all = new Set(); Object.values(ownerMap).forEach(list => list.forEach(m => all.add(m)));
+                all.forEach(m => { let o = new Option(m, m); if(m===selMay) o.selected=true; maySelect.add(o); });
+            } else {
+                const machines = ownerMap[owner] || [];
+                machines.forEach(m => { let o = new Option(m, m); if(m===selMay) o.selected=true; maySelect.add(o); });
+            }
+        }
+        chuSelect.addEventListener('change', (e) => updateMachines(e.target.value));
+        updateMachines(chuSelect.value);
+
+        function openE(k){document.getElementById('d-'+k).className='d-none'; document.getElementById('f-'+k).style.display='block';}
+        function showT(k){document.getElementById('t-'+k).style.display='block';}
+        function formatCur(i){let v=i.value.replace(/\D/g,""); if(v!=="")i.value=Number(v).toLocaleString('en-US');}
+    </script>
+</body>
+</html>

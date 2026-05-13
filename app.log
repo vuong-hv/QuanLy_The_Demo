@@ -1,0 +1,1838 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://112.213.88.23:5001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 101-212-806
+[2026-05-13 00:22:09,887] INFO in app: index breakdown: context_ms=2.5ms, render_ms=12.7ms
+[2026-05-13 00:22:09,887] INFO in app: GET / -> 200 in 15.7ms
+42.114.184.150 - - [13/May/2026 00:22:09] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:22:09,965] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:22:09] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:22:10,002] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 9.7ms
+42.114.184.150 - - [13/May/2026 00:22:10] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:22:11,540] INFO in app: summary breakdown: context_ms=3.7ms, render_ms=27.1ms
+[2026-05-13 00:22:11,541] INFO in app: GET /summary -> 200 in 31.5ms
+42.114.184.150 - - [13/May/2026 00:22:11] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:22:11,585] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:22:11] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:22:11,666] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:22:11] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:23:17,053] INFO in app: summary breakdown: context_ms=3.5ms, render_ms=1.5ms
+[2026-05-13 00:23:17,054] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 5.8ms
+42.114.14.185 - - [13/May/2026 00:23:17] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:23:17,114] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 00:23:17] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:23:22,907] INFO in app: index breakdown: context_ms=3.0ms, render_ms=1.6ms
+[2026-05-13 00:23:22,908] INFO in app: GET / -> 200 in 5.2ms
+42.114.184.150 - - [13/May/2026 00:23:22] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:23:22,988] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:23:22] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:23:23,015] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+42.114.184.150 - - [13/May/2026 00:23:23] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:23:24,737] INFO in app: index breakdown: context_ms=2.3ms, render_ms=0.7ms
+[2026-05-13 00:23:24,737] INFO in app: GET / -> 200 in 3.3ms
+42.114.184.150 - - [13/May/2026 00:23:24] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:23:24,849] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:23:24] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:23:24,876] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:23:24] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:23:25,840] INFO in app: summary breakdown: context_ms=3.7ms, render_ms=2.9ms
+[2026-05-13 00:23:25,841] INFO in app: GET /summary -> 200 in 7.1ms
+42.114.184.150 - - [13/May/2026 00:23:25] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:23:25,889] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:23:25] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:23:25,995] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:23:25] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:23:32,528] INFO in app: summary breakdown: context_ms=4.1ms, render_ms=1.6ms
+[2026-05-13 00:23:32,528] INFO in app: GET /summary?date=2026-05-07&item=&q= -> 200 in 6.2ms
+42.114.14.185 - - [13/May/2026 00:23:32] "GET /summary?date=2026-05-07&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:23:32,681] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 00:23:32] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+ * Detected change in '/root/QuanLy_KhacHang/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 101-212-806
+ * Detected change in '/root/QuanLy_KhacHang/storage.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 101-212-806
+[2026-05-13 00:25:00,465] INFO in app: summary breakdown: context_ms=3.2ms, render_ms=53.3ms
+[2026-05-13 00:25:00,466] INFO in app: GET /summary -> 200 in 57.2ms
+42.114.184.150 - - [13/May/2026 00:25:00] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:25:00,563] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:25:00] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:25:00,572] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 8.0ms
+42.114.184.150 - - [13/May/2026 00:25:00] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:25:07,751] INFO in app: summary breakdown: context_ms=2.8ms, render_ms=1.4ms
+[2026-05-13 00:25:07,752] INFO in app: GET /summary -> 200 in 5.1ms
+42.114.184.150 - - [13/May/2026 00:25:07] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:25:07,830] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:25:07] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:25:07,833] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.184.150 - - [13/May/2026 00:25:07] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:25:26,976] INFO in app: summary breakdown: context_ms=3.3ms, render_ms=1.2ms
+[2026-05-13 00:25:26,977] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 5.4ms
+42.114.184.150 - - [13/May/2026 00:25:26] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:25:27,051] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:25:27] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:25:27,059] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.184.150 - - [13/May/2026 00:25:27] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:25:52,321] INFO in app: summary breakdown: context_ms=2.6ms, render_ms=1.2ms
+[2026-05-13 00:25:52,322] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 4.6ms
+42.114.184.150 - - [13/May/2026 00:25:52] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:25:52,402] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:25:52] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:25:52,406] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.7ms
+42.114.184.150 - - [13/May/2026 00:25:52] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+Database file: data_nganhang.db
+Mo tren iPhone/Safari: http://<IP-PUBLIC-CUA-SERVER>:5001
+Dat bien moi truong PUBLIC_IP de in ra dung duong dan truy cap.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://112.213.88.23:5001
+[33mPress CTRL+C to quit[0m
+[2026-05-13 00:26:53,589] INFO in app: summary breakdown: context_ms=3.5ms, render_ms=39.9ms
+[2026-05-13 00:26:53,590] INFO in app: GET /summary -> 200 in 44.1ms
+127.0.0.1 - - [13/May/2026 00:26:53] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:27:11,419] INFO in app: summary breakdown: context_ms=3.8ms, render_ms=1.1ms
+[2026-05-13 00:27:11,419] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 5.7ms
+42.114.184.150 - - [13/May/2026 00:27:11] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:27:11,495] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:27:11] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:27:11,510] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 7.6ms
+42.114.184.150 - - [13/May/2026 00:27:11] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:27:15,290] INFO in app: summary breakdown: context_ms=1.8ms, render_ms=0.5ms
+[2026-05-13 00:27:15,291] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 2.7ms
+42.114.184.150 - - [13/May/2026 00:27:15] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:27:15,357] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:27:15] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:27:15,361] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:27:15] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:27:43,203] INFO in app: all_transactions breakdown: context_ms=6.0ms, render_ms=51.0ms
+[2026-05-13 00:27:43,204] INFO in app: GET /all_transactions -> 200 in 57.8ms
+42.114.14.185 - - [13/May/2026 00:27:43] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:27:43,249] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 00:27:43] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:27:43,273] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:27:43] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:27:43,326] INFO in app: GET /favicon.ico -> 404 in 1.0ms
+42.114.14.185 - - [13/May/2026 00:27:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 00:27:46,685] INFO in app: report_cty breakdown: context_ms=2.9ms, render_ms=22.0ms
+[2026-05-13 00:27:46,685] INFO in app: GET /report_cty -> 200 in 25.3ms
+42.114.14.185 - - [13/May/2026 00:27:46] "GET /report_cty HTTP/1.1" 200 -
+[2026-05-13 00:27:46,748] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.14.185 - - [13/May/2026 00:27:46] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:27:46,787] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:27:46] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 00:27:48,406] INFO in app: index breakdown: context_ms=2.3ms, render_ms=11.4ms
+[2026-05-13 00:27:48,407] INFO in app: GET / -> 200 in 14.3ms
+42.114.14.185 - - [13/May/2026 00:27:48] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:27:48,453] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 00:27:48] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:27:48,500] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:27:48] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:27:51,114] INFO in app: summary breakdown: context_ms=3.1ms, render_ms=1.2ms
+[2026-05-13 00:27:51,115] INFO in app: GET /summary -> 200 in 4.9ms
+42.114.14.185 - - [13/May/2026 00:27:51] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:27:51,172] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 00:27:51] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:27:51,201] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:27:51] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:28:16,841] INFO in app: add_summary_entry breakdown: write_ms=8.0ms, redirect_ms=0.4ms
+[2026-05-13 00:28:16,842] INFO in app: POST /add_summary_entry -> 302 in 9.1ms
+42.114.14.185 - - [13/May/2026 00:28:16] "[32mPOST /add_summary_entry HTTP/1.1[0m" 302 -
+[2026-05-13 00:28:16,889] INFO in app: summary breakdown: context_ms=2.7ms, render_ms=1.2ms
+[2026-05-13 00:28:16,890] INFO in app: GET /summary -> 200 in 4.3ms
+42.114.14.185 - - [13/May/2026 00:28:16] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:28:16,983] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 00:28:16] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:28:16,995] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+42.114.14.185 - - [13/May/2026 00:28:16] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:28:33,934] INFO in app: add_summary_entry breakdown: write_ms=9.6ms, redirect_ms=0.3ms
+[2026-05-13 00:28:33,934] INFO in app: POST /add_summary_entry -> 302 in 10.4ms
+42.114.14.185 - - [13/May/2026 00:28:33] "[32mPOST /add_summary_entry HTTP/1.1[0m" 302 -
+[2026-05-13 00:28:33,972] INFO in app: summary breakdown: context_ms=3.2ms, render_ms=1.0ms
+[2026-05-13 00:28:33,973] INFO in app: GET /summary -> 200 in 4.5ms
+42.114.14.185 - - [13/May/2026 00:28:33] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:28:34,055] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.4ms
+42.114.14.185 - - [13/May/2026 00:28:34] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:28:34,072] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.5ms
+42.114.14.185 - - [13/May/2026 00:28:34] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:28:58,569] INFO in app: add_summary_entry breakdown: write_ms=6.1ms, redirect_ms=0.3ms
+[2026-05-13 00:28:58,569] INFO in app: POST /add_summary_entry -> 302 in 6.9ms
+42.114.14.185 - - [13/May/2026 00:28:58] "[32mPOST /add_summary_entry HTTP/1.1[0m" 302 -
+[2026-05-13 00:28:58,609] INFO in app: summary breakdown: context_ms=3.5ms, render_ms=1.2ms
+[2026-05-13 00:28:58,610] INFO in app: GET /summary -> 200 in 5.1ms
+42.114.14.185 - - [13/May/2026 00:28:58] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:28:58,702] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.7ms
+42.114.14.185 - - [13/May/2026 00:28:58] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:28:58,739] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 5.2ms
+42.114.14.185 - - [13/May/2026 00:28:58] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+Database file: data_nganhang.db
+Mo tren iPhone/Safari: http://<IP-PUBLIC-CUA-SERVER>:5001
+Dat bien moi truong PUBLIC_IP de in ra dung duong dan truy cap.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://112.213.88.23:5001
+[33mPress CTRL+C to quit[0m
+[2026-05-13 00:29:53,349] INFO in app: all_transactions breakdown: context_ms=3.9ms, render_ms=59.2ms
+[2026-05-13 00:29:53,349] INFO in app: GET /all_transactions -> 200 in 63.5ms
+42.114.14.185 - - [13/May/2026 00:29:53] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:29:53,408] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 5.4ms
+42.114.14.185 - - [13/May/2026 00:29:53] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:29:53,433] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:29:53] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:29:53,560] INFO in app: GET /favicon.ico -> 404 in 0.4ms
+42.114.14.185 - - [13/May/2026 00:29:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 00:30:02,675] INFO in app: summary breakdown: context_ms=5.3ms, render_ms=53.9ms
+[2026-05-13 00:30:02,676] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 60.4ms
+42.114.184.150 - - [13/May/2026 00:30:02] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:30:02,757] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:30:02] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:30:02,770] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.184.150 - - [13/May/2026 00:30:02] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:30:07,638] INFO in app: summary breakdown: context_ms=2.5ms, render_ms=0.8ms
+[2026-05-13 00:30:07,638] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 3.9ms
+42.114.184.150 - - [13/May/2026 00:30:07] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:30:07,709] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:30:07] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:30:07,712] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:30:07] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:30:33,017] INFO in app: summary breakdown: context_ms=3.0ms, render_ms=1.2ms
+[2026-05-13 00:30:33,018] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 5.2ms
+42.114.184.150 - - [13/May/2026 00:30:33] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:30:33,094] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:30:33] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:30:33,104] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+42.114.184.150 - - [13/May/2026 00:30:33] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:30:39,154] INFO in app: summary breakdown: context_ms=2.2ms, render_ms=1.7ms
+[2026-05-13 00:30:39,155] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 5.0ms
+42.114.184.150 - - [13/May/2026 00:30:39] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:30:39,236] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:30:39] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:30:39,248] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.184.150 - - [13/May/2026 00:30:39] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:30:41,903] INFO in app: summary breakdown: context_ms=1.6ms, render_ms=0.5ms
+[2026-05-13 00:30:41,904] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.4ms
+42.114.184.150 - - [13/May/2026 00:30:41] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:30:41,965] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:30:41] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:30:41,975] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:30:41] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:30:59,624] INFO in app: summary breakdown: context_ms=2.4ms, render_ms=0.5ms
+[2026-05-13 00:30:59,624] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 3.4ms
+42.114.184.150 - - [13/May/2026 00:30:59] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:30:59,708] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:30:59] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:30:59,710] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 3.0ms
+42.114.184.150 - - [13/May/2026 00:30:59] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:24,765] INFO in app: add_summary_entry breakdown: write_ms=8.7ms, redirect_ms=0.4ms
+[2026-05-13 00:31:24,765] INFO in app: POST /add_summary_entry -> 302 in 9.6ms
+42.114.184.150 - - [13/May/2026 00:31:24] "[32mPOST /add_summary_entry HTTP/1.1[0m" 302 -
+[2026-05-13 00:31:24,833] INFO in app: summary breakdown: context_ms=3.0ms, render_ms=2.6ms
+[2026-05-13 00:31:24,833] INFO in app: GET /summary -> 200 in 6.0ms
+42.114.184.150 - - [13/May/2026 00:31:24] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:31:24,904] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:31:24] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:31:24,981] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+42.114.184.150 - - [13/May/2026 00:31:24] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:32,335] INFO in app: summary breakdown: context_ms=2.7ms, render_ms=1.7ms
+[2026-05-13 00:31:32,335] INFO in app: GET /summary -> 200 in 4.9ms
+42.114.184.150 - - [13/May/2026 00:31:32] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:31:32,414] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:31:32] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:31:32,490] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.184.150 - - [13/May/2026 00:31:32] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:34,350] INFO in app: summary breakdown: context_ms=2.8ms, render_ms=2.3ms
+[2026-05-13 00:31:34,351] INFO in app: GET /summary -> 200 in 6.7ms
+42.114.184.150 - - [13/May/2026 00:31:34] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:31:34,421] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:31:34] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:31:34,477] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:31:34] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:36,684] INFO in app: index breakdown: context_ms=2.3ms, render_ms=11.0ms
+[2026-05-13 00:31:36,685] INFO in app: GET / -> 200 in 13.7ms
+42.114.14.185 - - [13/May/2026 00:31:36] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:31:36,926] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.14.185 - - [13/May/2026 00:31:36] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:38,595] INFO in app: retail_customers breakdown: context_ms=4.3ms, render_ms=34.1ms
+[2026-05-13 00:31:38,597] INFO in app: GET /retail_customers -> 200 in 40.7ms
+42.114.14.185 - - [13/May/2026 00:31:38] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:31:38,936] INFO in app: summary breakdown: context_ms=2.4ms, render_ms=1.7ms
+[2026-05-13 00:31:38,936] INFO in app: GET /summary -> 200 in 4.7ms
+42.114.184.150 - - [13/May/2026 00:31:38] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:31:38,956] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.14.185 - - [13/May/2026 00:31:38] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:39,019] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:31:39] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:31:39,072] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:31:39] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:52,960] INFO in app: retail_customers breakdown: context_ms=2.9ms, render_ms=1.4ms
+[2026-05-13 00:31:52,961] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=Th%E1%BA%BB+C+Thu -> 200 in 5.2ms
+42.114.14.185 - - [13/May/2026 00:31:52] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Thẻ+C+Thu HTTP/1.1" 200 -
+[2026-05-13 00:31:53,046] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 00:31:53] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:53,316] INFO in app: summary breakdown: context_ms=2.4ms, render_ms=0.7ms
+[2026-05-13 00:31:53,316] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 3.6ms
+42.114.184.150 - - [13/May/2026 00:31:53] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:31:53,392] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.184.150 - - [13/May/2026 00:31:53] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:53,394] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:31:53] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:31:55,749] INFO in app: summary breakdown: context_ms=2.1ms, render_ms=0.5ms
+[2026-05-13 00:31:55,749] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.9ms
+42.114.184.150 - - [13/May/2026 00:31:55] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:31:55,827] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.184.150 - - [13/May/2026 00:31:55] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:31:55,828] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.1ms
+42.114.184.150 - - [13/May/2026 00:31:55] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:31:59,819] INFO in app: summary breakdown: context_ms=2.1ms, render_ms=0.4ms
+[2026-05-13 00:31:59,819] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.9ms
+42.114.184.150 - - [13/May/2026 00:31:59] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:31:59,883] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:31:59] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:31:59,889] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.184.150 - - [13/May/2026 00:31:59] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:32:03,024] INFO in app: index breakdown: context_ms=3.6ms, render_ms=1.5ms
+[2026-05-13 00:32:03,025] INFO in app: GET / -> 200 in 5.6ms
+42.114.184.150 - - [13/May/2026 00:32:03] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:32:03,063] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:32:03] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:32:03,098] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:32:03] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:32:04,598] INFO in app: summary breakdown: context_ms=3.8ms, render_ms=2.5ms
+[2026-05-13 00:32:04,598] INFO in app: GET /summary -> 200 in 6.9ms
+42.114.184.150 - - [13/May/2026 00:32:04] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:32:04,638] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:32:04] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:32:04,731] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:32:04] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:32:20,833] INFO in app: add_retail_customer breakdown: write_ms=7.0ms, redirect_ms=0.4ms
+[2026-05-13 00:32:20,833] INFO in app: POST /add_retail_customer -> 302 in 8.3ms
+42.114.14.185 - - [13/May/2026 00:32:20] "[32mPOST /add_retail_customer HTTP/1.1[0m" 302 -
+[2026-05-13 00:32:20,915] INFO in app: retail_customers breakdown: context_ms=4.1ms, render_ms=11.4ms
+[2026-05-13 00:32:20,918] INFO in app: GET /retail_customers -> 200 in 18.1ms
+42.114.14.185 - - [13/May/2026 00:32:20] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:32:21,236] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 00:32:21] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:32:24,051] INFO in app: summary breakdown: context_ms=1.8ms, render_ms=0.6ms
+[2026-05-13 00:32:24,051] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.8ms
+42.114.184.150 - - [13/May/2026 00:32:24] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:32:24,127] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:32:24] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:32:24,130] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.184.150 - - [13/May/2026 00:32:24] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:32:34,574] INFO in app: retail_customers breakdown: context_ms=3.5ms, render_ms=9.7ms
+[2026-05-13 00:32:34,576] INFO in app: GET /retail_customers -> 200 in 15.3ms
+42.114.184.150 - - [13/May/2026 00:32:34] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:32:34,614] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:32:34] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:32:34,905] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.184.150 - - [13/May/2026 00:32:34] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:32:36,182] INFO in app: index breakdown: context_ms=2.3ms, render_ms=0.9ms
+[2026-05-13 00:32:36,182] INFO in app: GET / -> 200 in 3.5ms
+42.114.184.150 - - [13/May/2026 00:32:36] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:32:36,222] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:32:36] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:32:36,256] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:32:36] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:32:37,020] INFO in app: summary breakdown: context_ms=2.6ms, render_ms=1.7ms
+[2026-05-13 00:32:37,020] INFO in app: GET /summary -> 200 in 4.8ms
+42.114.184.150 - - [13/May/2026 00:32:37] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:32:37,056] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:32:37] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:32:37,161] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:32:37] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:34:01,701] INFO in app: index breakdown: context_ms=3.2ms, render_ms=2.1ms
+[2026-05-13 00:34:01,702] INFO in app: GET / -> 200 in 6.4ms
+42.114.184.150 - - [13/May/2026 00:34:01] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:34:01,789] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:34:01] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:34:01,819] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.8ms
+42.114.184.150 - - [13/May/2026 00:34:01] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:34:07,325] INFO in app: summary breakdown: context_ms=3.4ms, render_ms=1.9ms
+[2026-05-13 00:34:07,326] INFO in app: GET /summary -> 200 in 5.8ms
+42.114.184.150 - - [13/May/2026 00:34:07] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:34:07,379] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:34:07] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:34:07,481] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:34:07] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:34:17,095] INFO in app: all_transactions breakdown: context_ms=3.6ms, render_ms=0.6ms
+[2026-05-13 00:34:17,095] INFO in app: GET /all_transactions -> 200 in 4.5ms
+42.114.14.185 - - [13/May/2026 00:34:17] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:34:17,138] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.14.185 - - [13/May/2026 00:34:17] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:34:17,162] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 00:34:17] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:34:33,022] INFO in app: all_transactions breakdown: context_ms=5.2ms, render_ms=2.3ms
+[2026-05-13 00:34:33,023] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=SAMSUNG+C+H%E1%BA%B0NG&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 8.6ms
+42.114.14.185 - - [13/May/2026 00:34:33] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=SAMSUNG+C+HẰNG&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:34:33,093] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.14.185 - - [13/May/2026 00:34:33] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:34:33,104] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:34:33] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:35:30,827] INFO in app: all_transactions breakdown: context_ms=5.2ms, render_ms=1.6ms
+[2026-05-13 00:35:30,828] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=QR+C+H%E1%BA%B0NG&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 8.5ms
+42.114.14.185 - - [13/May/2026 00:35:30] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=QR+C+HẰNG&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:35:30,886] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 00:35:30] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:35:30,916] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:35:30] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:35:43,396] INFO in app: summary breakdown: context_ms=3.4ms, render_ms=2.8ms
+[2026-05-13 00:35:43,397] INFO in app: GET /summary -> 200 in 7.1ms
+42.114.184.150 - - [13/May/2026 00:35:43] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:35:43,474] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:35:43] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:35:43,526] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.184.150 - - [13/May/2026 00:35:43] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:36:04,049] INFO in app: all_transactions breakdown: context_ms=4.9ms, render_ms=2.1ms
+[2026-05-13 00:36:04,050] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-12&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 7.9ms
+42.114.14.185 - - [13/May/2026 00:36:04] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-12&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:36:04,123] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.14.185 - - [13/May/2026 00:36:04] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:36:04,133] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:36:04] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:36:14,007] INFO in app: summary breakdown: context_ms=5.5ms, render_ms=4.5ms
+[2026-05-13 00:36:14,008] INFO in app: GET /summary -> 200 in 11.2ms
+42.114.184.150 - - [13/May/2026 00:36:14] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:36:14,126] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:36:14] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:36:14,164] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.184.150 - - [13/May/2026 00:36:14] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:36:19,938] INFO in app: summary breakdown: context_ms=3.1ms, render_ms=1.7ms
+[2026-05-13 00:36:19,939] INFO in app: GET /summary -> 200 in 5.3ms
+42.114.184.150 - - [13/May/2026 00:36:19] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:36:20,011] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:36:20] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:36:20,079] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.184.150 - - [13/May/2026 00:36:20] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:36:25,211] INFO in app: summary breakdown: context_ms=1.6ms, render_ms=0.5ms
+[2026-05-13 00:36:25,212] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.4ms
+42.114.184.150 - - [13/May/2026 00:36:25] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:36:25,275] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:36:25] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:36:25,282] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:36:25] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:36:39,731] INFO in app: all_transactions breakdown: context_ms=8.3ms, render_ms=3.3ms
+[2026-05-13 00:36:39,732] INFO in app: GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+K%C3%8DNH&may_pos=AB+Dung -> 200 in 12.8ms
+42.114.14.185 - - [13/May/2026 00:36:39] "GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+KÍNH&may_pos=AB+Dung HTTP/1.1" 200 -
+[2026-05-13 00:36:39,795] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.7ms
+42.114.14.185 - - [13/May/2026 00:36:39] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:36:39,819] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:36:39] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:36:54,641] INFO in app: all_transactions breakdown: context_ms=7.0ms, render_ms=2.8ms
+[2026-05-13 00:36:54,642] INFO in app: GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+K%C3%8DNH&may_pos=AB+Hu%E1%BB%87 -> 200 in 10.4ms
+42.114.14.185 - - [13/May/2026 00:36:54] "GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+KÍNH&may_pos=AB+Huệ HTTP/1.1" 200 -
+[2026-05-13 00:36:54,745] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 00:36:54] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:36:54,745] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.8ms
+42.114.14.185 - - [13/May/2026 00:36:54] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:36:55,639] INFO in app: summary breakdown: context_ms=1.8ms, render_ms=0.7ms
+[2026-05-13 00:36:55,639] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.8ms
+42.114.184.150 - - [13/May/2026 00:36:55] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:36:55,714] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:36:55] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:36:55,721] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:36:55] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:36:57,376] INFO in app: summary breakdown: context_ms=1.6ms, render_ms=0.4ms
+[2026-05-13 00:36:57,376] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.3ms
+42.114.184.150 - - [13/May/2026 00:36:57] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:36:57,446] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:36:57] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:36:57,449] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:36:57] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:37:04,920] INFO in app: summary breakdown: context_ms=1.9ms, render_ms=0.6ms
+[2026-05-13 00:37:04,920] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.9ms
+42.114.184.150 - - [13/May/2026 00:37:04] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:37:04,990] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:37:04] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:37:05,011] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.184.150 - - [13/May/2026 00:37:05] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:37:10,535] INFO in app: all_transactions breakdown: context_ms=6.2ms, render_ms=1.9ms
+[2026-05-13 00:37:10,536] INFO in app: GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+K%C3%8DNH&may_pos=AB+TR%C6%AF%E1%BB%9CNG -> 200 in 8.8ms
+42.114.14.185 - - [13/May/2026 00:37:10] "GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+KÍNH&may_pos=AB+TRƯỜNG HTTP/1.1" 200 -
+[2026-05-13 00:37:10,616] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:37:10] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:37:10,617] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 00:37:10] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:37:24,211] INFO in app: all_transactions breakdown: context_ms=6.6ms, render_ms=2.5ms
+[2026-05-13 00:37:24,211] INFO in app: GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+K%C3%8DNH&may_pos=MBV+LU%E1%BA%ACT -> 200 in 10.1ms
+42.114.14.185 - - [13/May/2026 00:37:24] "GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+KÍNH&may_pos=MBV+LUẬT HTTP/1.1" 200 -
+[2026-05-13 00:37:24,283] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.14.185 - - [13/May/2026 00:37:24] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:37:24,303] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:37:24] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+Database file: data_nganhang.db
+Mo tren iPhone/Safari: http://<IP-PUBLIC-CUA-SERVER>:5001
+Dat bien moi truong PUBLIC_IP de in ra dung duong dan truy cap.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://112.213.88.23:5001
+[33mPress CTRL+C to quit[0m
+[2026-05-13 00:37:38,565] INFO in app: all_transactions breakdown: context_ms=6.1ms, render_ms=52.1ms
+[2026-05-13 00:37:38,565] INFO in app: GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+K%C3%8DNH&may_pos=Mbv+Huy -> 200 in 58.8ms
+42.114.14.185 - - [13/May/2026 00:37:38] "GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+KÍNH&may_pos=Mbv+Huy HTTP/1.1" 200 -
+[2026-05-13 00:37:38,648] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:37:38] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:37:38,764] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 6.2ms
+42.114.14.185 - - [13/May/2026 00:37:38] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:37:49,668] INFO in app: summary breakdown: context_ms=3.4ms, render_ms=51.7ms
+[2026-05-13 00:37:49,668] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 55.6ms
+42.114.184.150 - - [13/May/2026 00:37:49] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:37:49,748] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:37:49] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:37:49,761] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.184.150 - - [13/May/2026 00:37:49] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:37:52,674] INFO in app: summary breakdown: context_ms=2.3ms, render_ms=0.6ms
+[2026-05-13 00:37:52,674] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 3.3ms
+42.114.184.150 - - [13/May/2026 00:37:52] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:37:52,744] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:37:52] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:37:52,750] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:37:52] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:37:57,785] INFO in app: all_transactions breakdown: context_ms=7.5ms, render_ms=2.6ms
+[2026-05-13 00:37:57,785] INFO in app: GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG%20K%C3%8DNH&may_pos=Mbv%20Huy&edit_idx=81 -> 200 in 10.7ms
+42.114.14.185 - - [13/May/2026 00:37:57] "GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG%20KÍNH&may_pos=Mbv%20Huy&edit_idx=81 HTTP/1.1" 200 -
+[2026-05-13 00:37:57,856] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:37:57] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:37:57,874] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.14.185 - - [13/May/2026 00:37:57] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:37:58,671] INFO in app: retail_customers breakdown: context_ms=4.2ms, render_ms=34.1ms
+[2026-05-13 00:37:58,673] INFO in app: GET /retail_customers -> 200 in 40.5ms
+42.114.184.150 - - [13/May/2026 00:37:58] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:37:58,711] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:37:58] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:37:59,076] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.184.150 - - [13/May/2026 00:37:59] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:38:00,146] INFO in app: index breakdown: context_ms=2.6ms, render_ms=11.4ms
+[2026-05-13 00:38:00,146] INFO in app: GET / -> 200 in 14.5ms
+42.114.184.150 - - [13/May/2026 00:38:00] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:38:00,207] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:38:00] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:38:00,246] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:38:00] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:38:01,415] INFO in app: summary breakdown: context_ms=2.2ms, render_ms=0.8ms
+[2026-05-13 00:38:01,415] INFO in app: GET /summary -> 200 in 3.3ms
+42.114.184.150 - - [13/May/2026 00:38:01] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:38:01,451] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:38:01] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:38:01,512] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:38:01] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:38:05,070] INFO in app: update_transaction_inline breakdown: load_ms=3.5ms, compute_ms=0.5ms, write_ms=5.9ms, redirect_ms=0.3ms
+[2026-05-13 00:38:05,071] INFO in app: POST /update_transaction_inline -> 302 in 10.7ms
+42.114.14.185 - - [13/May/2026 00:38:05] "[32mPOST /update_transaction_inline HTTP/1.1[0m" 302 -
+[2026-05-13 00:38:05,106] INFO in app: all_transactions breakdown: context_ms=3.6ms, render_ms=1.6ms
+[2026-05-13 00:38:05,106] INFO in app: GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&chu_pos=T%E1%BA%A5t+c%E1%BA%A3&cong_ty=TRUNG+K%C3%8DNH&may_pos=Mbv+Huy -> 200 in 5.6ms
+42.114.14.185 - - [13/May/2026 00:38:05] "GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&chu_pos=Tất+cả&cong_ty=TRUNG+KÍNH&may_pos=Mbv+Huy HTTP/1.1" 200 -
+[2026-05-13 00:38:05,179] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:38:05] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:38:05,211] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 00:38:05] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:38:14,410] INFO in app: summary breakdown: context_ms=2.4ms, render_ms=0.8ms
+[2026-05-13 00:38:14,411] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 3.5ms
+127.0.0.1 - - [13/May/2026 00:38:14] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:38:20,648] INFO in app: summary breakdown: context_ms=3.8ms, render_ms=2.6ms
+[2026-05-13 00:38:20,649] INFO in app: GET /summary -> 200 in 7.6ms
+42.114.184.150 - - [13/May/2026 00:38:20] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:38:20,724] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:38:20] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:38:20,741] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+42.114.184.150 - - [13/May/2026 00:38:20] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:38:22,120] INFO in app: summary breakdown: context_ms=2.3ms, render_ms=0.9ms
+[2026-05-13 00:38:22,120] INFO in app: GET /summary -> 200 in 3.7ms
+42.114.184.150 - - [13/May/2026 00:38:22] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:38:22,190] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:38:22] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:38:22,213] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.184.150 - - [13/May/2026 00:38:22] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:38:23,575] INFO in app: all_transactions breakdown: context_ms=4.6ms, render_ms=1.1ms
+[2026-05-13 00:38:23,576] INFO in app: GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+K%C3%8DNH&may_pos=Pos+M%C6%B0%E1%BB%A3n -> 200 in 6.2ms
+42.114.14.185 - - [13/May/2026 00:38:23] "GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+KÍNH&may_pos=Pos+Mượn HTTP/1.1" 200 -
+[2026-05-13 00:38:23,643] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.14.185 - - [13/May/2026 00:38:23] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:38:23,647] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:38:23] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:38:36,171] INFO in app: all_transactions breakdown: context_ms=6.1ms, render_ms=4.6ms
+[2026-05-13 00:38:36,172] INFO in app: GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+K%C3%8DNH&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 11.7ms
+42.114.14.185 - - [13/May/2026 00:38:36] "GET /all_transactions?from_date=2026-05-07&to_date=2026-05-12&cong_ty=TRUNG+KÍNH&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:38:36,255] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:38:36] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:38:36,298] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.14.185 - - [13/May/2026 00:38:36] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:38:52,152] INFO in app: summary breakdown: context_ms=4.2ms, render_ms=1.3ms
+[2026-05-13 00:38:52,152] INFO in app: GET /summary -> 200 in 6.1ms
+42.114.184.150 - - [13/May/2026 00:38:52] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:38:52,220] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:38:52] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:38:52,251] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.184.150 - - [13/May/2026 00:38:52] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:38:54,148] INFO in app: summary breakdown: context_ms=2.3ms, render_ms=1.0ms
+[2026-05-13 00:38:54,148] INFO in app: GET /summary -> 200 in 3.6ms
+42.114.184.150 - - [13/May/2026 00:38:54] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:38:54,215] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:38:54] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:38:54,241] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.184.150 - - [13/May/2026 00:38:54] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:03,315] INFO in app: index breakdown: context_ms=2.5ms, render_ms=0.9ms
+[2026-05-13 00:39:03,315] INFO in app: GET / -> 200 in 3.9ms
+42.114.14.185 - - [13/May/2026 00:39:03] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:39:03,365] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.14.185 - - [13/May/2026 00:39:03] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:03,392] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 00:39:03] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:39:04,219] INFO in app: summary breakdown: context_ms=2.4ms, render_ms=1.1ms
+[2026-05-13 00:39:04,219] INFO in app: GET /summary?date=2026-05-13&item=&q= -> 200 in 3.8ms
+42.114.184.150 - - [13/May/2026 00:39:04] "GET /summary?date=2026-05-13&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:04,300] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:39:04] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:04,325] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:39:04] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:08,598] INFO in app: summary breakdown: context_ms=2.3ms, render_ms=1.1ms
+[2026-05-13 00:39:08,598] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 4.0ms
+42.114.184.150 - - [13/May/2026 00:39:08] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:08,664] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:39:08] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:08,689] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.184.150 - - [13/May/2026 00:39:08] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:14,435] INFO in app: summary breakdown: context_ms=2.6ms, render_ms=1.4ms
+[2026-05-13 00:39:14,435] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 4.8ms
+42.114.184.150 - - [13/May/2026 00:39:14] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:14,514] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:39:14] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:14,526] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.184.150 - - [13/May/2026 00:39:14] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:16,146] INFO in app: company_transfers breakdown: context_ms=4.1ms, render_ms=16.7ms
+[2026-05-13 00:39:16,147] INFO in app: GET /company_transfers -> 200 in 21.3ms
+42.114.14.185 - - [13/May/2026 00:39:16] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 00:39:16,204] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.14.185 - - [13/May/2026 00:39:16] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:16,229] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:39:16] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 00:39:23,255] INFO in app: company_transfers breakdown: context_ms=4.5ms, render_ms=0.7ms
+[2026-05-13 00:39:23,255] INFO in app: GET /company_transfers?from_date=2026-05-13&to_date=2026-05-13&company=TRUNG+K%C3%8DNH -> 200 in 5.9ms
+42.114.14.185 - - [13/May/2026 00:39:23] "GET /company_transfers?from_date=2026-05-13&to_date=2026-05-13&company=TRUNG+KÍNH HTTP/1.1" 200 -
+[2026-05-13 00:39:23,305] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.14.185 - - [13/May/2026 00:39:23] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:23,333] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 00:39:23] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 00:39:28,380] INFO in app: summary breakdown: context_ms=2.7ms, render_ms=0.8ms
+[2026-05-13 00:39:28,381] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 3.9ms
+42.114.184.150 - - [13/May/2026 00:39:28] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:28,452] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:39:28] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:28,467] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.184.150 - - [13/May/2026 00:39:28] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:37,609] INFO in app: summary breakdown: context_ms=3.1ms, render_ms=1.8ms
+[2026-05-13 00:39:37,610] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 5.9ms
+42.114.184.150 - - [13/May/2026 00:39:37] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:37,701] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:39:37] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:37,735] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.184.150 - - [13/May/2026 00:39:37] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:41,241] INFO in app: summary breakdown: context_ms=1.6ms, render_ms=0.5ms
+[2026-05-13 00:39:41,241] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.4ms
+42.114.184.150 - - [13/May/2026 00:39:41] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:41,304] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:39:41] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:41,314] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:39:41] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:44,059] INFO in app: company_transfers breakdown: context_ms=2.9ms, render_ms=0.6ms
+[2026-05-13 00:39:44,060] INFO in app: GET /company_transfers?from_date=2026-05-12&to_date=2026-05-13&company=TRUNG+K%C3%8DNH -> 200 in 3.8ms
+42.114.14.185 - - [13/May/2026 00:39:44] "GET /company_transfers?from_date=2026-05-12&to_date=2026-05-13&company=TRUNG+KÍNH HTTP/1.1" 200 -
+[2026-05-13 00:39:44,109] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 00:39:44] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:44,138] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:39:44] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 00:39:45,009] INFO in app: summary breakdown: context_ms=1.7ms, render_ms=0.5ms
+[2026-05-13 00:39:45,010] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.6ms
+42.114.184.150 - - [13/May/2026 00:39:45] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:45,082] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:39:45] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:45,085] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:39:45] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:49,370] INFO in app: summary breakdown: context_ms=2.3ms, render_ms=1.0ms
+[2026-05-13 00:39:49,370] INFO in app: GET /summary?date=2026-05-13&item=&q= -> 200 in 3.7ms
+42.114.184.150 - - [13/May/2026 00:39:49] "GET /summary?date=2026-05-13&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:49,442] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:39:49] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:49,456] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:39:49] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:53,140] INFO in app: summary breakdown: context_ms=2.9ms, render_ms=0.8ms
+[2026-05-13 00:39:53,141] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 4.4ms
+42.114.184.150 - - [13/May/2026 00:39:53] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:53,238] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:39:53] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:53,240] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:39:53] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:56,227] INFO in app: index breakdown: context_ms=2.4ms, render_ms=1.1ms
+[2026-05-13 00:39:56,227] INFO in app: GET / -> 200 in 3.8ms
+42.114.14.185 - - [13/May/2026 00:39:56] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:39:56,279] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.14.185 - - [13/May/2026 00:39:56] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:39:56,301] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 00:39:56] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:39:57,166] INFO in app: summary breakdown: context_ms=1.4ms, render_ms=0.4ms
+[2026-05-13 00:39:57,166] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.2ms
+42.114.184.150 - - [13/May/2026 00:39:57] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:39:57,230] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:39:57] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:39:57,238] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:39:57] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:40:09,675] INFO in app: summary breakdown: context_ms=6.3ms, render_ms=2.2ms
+[2026-05-13 00:40:09,676] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 9.8ms
+42.114.184.150 - - [13/May/2026 00:40:09] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:40:09,745] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:40:09] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:40:09,765] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.5ms
+42.114.184.150 - - [13/May/2026 00:40:09] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:40:50,436] INFO in app: summary breakdown: context_ms=4.2ms, render_ms=1.4ms
+[2026-05-13 00:40:50,436] INFO in app: GET /summary?date=2026-05-11&item=&q= -> 200 in 6.6ms
+42.114.184.150 - - [13/May/2026 00:40:50] "GET /summary?date=2026-05-11&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:40:50,525] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:40:50] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:40:50,549] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.7ms
+42.114.184.150 - - [13/May/2026 00:40:50] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:41:15,638] INFO in app: index breakdown: context_ms=4.4ms, render_ms=2.7ms
+[2026-05-13 00:41:15,639] INFO in app: GET / -> 200 in 8.1ms
+42.114.184.150 - - [13/May/2026 00:41:15] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:41:15,718] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:41:15] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:41:15,748] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.184.150 - - [13/May/2026 00:41:15] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:41:46,076] INFO in app: retail_customers breakdown: context_ms=3.5ms, render_ms=1.9ms
+[2026-05-13 00:41:46,077] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=Thanh+t%C3%B9ng+Th%C3%A1i -> 200 in 6.4ms
+42.114.14.185 - - [13/May/2026 00:41:46] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Thanh+tùng+Thái HTTP/1.1" 200 -
+[2026-05-13 00:41:46,199] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+42.114.14.185 - - [13/May/2026 00:41:46] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:41:55,824] INFO in app: summary breakdown: context_ms=6.5ms, render_ms=2.9ms
+[2026-05-13 00:41:55,825] INFO in app: GET /summary -> 200 in 10.7ms
+42.114.184.150 - - [13/May/2026 00:41:55] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:41:55,877] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:41:55] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:41:55,938] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.184.150 - - [13/May/2026 00:41:55] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:43:00,040] INFO in app: summary breakdown: context_ms=4.7ms, render_ms=1.8ms
+[2026-05-13 00:43:00,041] INFO in app: GET /summary?date=2026-05-13&item=&q= -> 200 in 7.5ms
+42.114.184.150 - - [13/May/2026 00:43:00] "GET /summary?date=2026-05-13&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:43:00,125] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:43:00] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:43:00,154] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.184.150 - - [13/May/2026 00:43:00] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:43:06,044] INFO in app: summary breakdown: context_ms=1.5ms, render_ms=0.5ms
+[2026-05-13 00:43:06,044] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.5ms
+42.114.184.150 - - [13/May/2026 00:43:06] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:43:06,150] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:43:06] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:43:06,151] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.8ms
+42.114.184.150 - - [13/May/2026 00:43:06] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:43:08,343] INFO in app: summary breakdown: context_ms=1.6ms, render_ms=0.4ms
+[2026-05-13 00:43:08,343] INFO in app: GET /summary?date=2026-05-12&item=&q= -> 200 in 2.3ms
+42.114.184.150 - - [13/May/2026 00:43:08] "GET /summary?date=2026-05-12&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:43:08,414] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:43:08] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:43:08,416] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:43:08] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:44:33,197] INFO in app: index breakdown: context_ms=3.2ms, render_ms=1.8ms
+[2026-05-13 00:44:33,197] INFO in app: GET / -> 200 in 5.9ms
+42.114.184.150 - - [13/May/2026 00:44:33] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:44:33,291] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:44:33] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:44:33,334] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.184.150 - - [13/May/2026 00:44:33] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:44:35,326] INFO in app: summary breakdown: context_ms=3.1ms, render_ms=1.2ms
+[2026-05-13 00:44:35,327] INFO in app: GET /summary -> 200 in 4.9ms
+42.114.184.150 - - [13/May/2026 00:44:35] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:44:35,366] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:44:35] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:44:35,418] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.184.150 - - [13/May/2026 00:44:35] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:44:38,170] INFO in app: summary breakdown: context_ms=4.2ms, render_ms=1.5ms
+[2026-05-13 00:44:38,170] INFO in app: GET /summary?date=2026-05-13&item=&q= -> 200 in 6.3ms
+42.114.184.150 - - [13/May/2026 00:44:38] "GET /summary?date=2026-05-13&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:44:38,241] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:44:38] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:44:38,306] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:44:38] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:44:42,669] INFO in app: summary breakdown: context_ms=4.2ms, render_ms=2.2ms
+[2026-05-13 00:44:42,670] INFO in app: GET /summary?date=2026-05-07&item=&q= -> 200 in 7.1ms
+42.114.184.150 - - [13/May/2026 00:44:42] "GET /summary?date=2026-05-07&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:44:42,754] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:44:42] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:44:42,832] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.184.150 - - [13/May/2026 00:44:42] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:46:59,557] INFO in app: summary breakdown: context_ms=4.1ms, render_ms=2.7ms
+[2026-05-13 00:46:59,558] INFO in app: GET /summary?date=2026-05-07&item=&q= -> 200 in 7.8ms
+42.114.184.150 - - [13/May/2026 00:46:59] "GET /summary?date=2026-05-07&item=&q= HTTP/1.1" 200 -
+[2026-05-13 00:46:59,626] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:46:59] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:46:59,687] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.184.150 - - [13/May/2026 00:46:59] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:03,166] INFO in app: retail_customers breakdown: context_ms=5.3ms, render_ms=12.0ms
+[2026-05-13 00:47:03,170] INFO in app: GET /retail_customers -> 200 in 21.0ms
+42.114.184.150 - - [13/May/2026 00:47:03] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:47:03,209] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:03] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:47:03,563] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:47:03] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:05,186] INFO in app: index breakdown: context_ms=2.5ms, render_ms=1.3ms
+[2026-05-13 00:47:05,187] INFO in app: GET / -> 200 in 4.5ms
+42.114.184.150 - - [13/May/2026 00:47:05] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:47:05,259] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:47:05] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:47:05,300] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.1ms
+42.114.184.150 - - [13/May/2026 00:47:05] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:06,292] INFO in app: report_cty breakdown: context_ms=2.7ms, render_ms=26.5ms
+[2026-05-13 00:47:06,293] INFO in app: GET /report_cty -> 200 in 29.5ms
+42.114.184.150 - - [13/May/2026 00:47:06] "GET /report_cty HTTP/1.1" 200 -
+[2026-05-13 00:47:06,335] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:06] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 00:47:06,373] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.184.150 - - [13/May/2026 00:47:06] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:10,839] INFO in app: index breakdown: context_ms=3.8ms, render_ms=1.7ms
+[2026-05-13 00:47:10,840] INFO in app: GET / -> 200 in 6.2ms
+42.114.184.150 - - [13/May/2026 00:47:10] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:47:10,918] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:10] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:47:10,949] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:47:10] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:11,989] INFO in app: all_transactions breakdown: context_ms=4.6ms, render_ms=0.8ms
+[2026-05-13 00:47:11,989] INFO in app: GET /all_transactions -> 200 in 5.8ms
+42.114.184.150 - - [13/May/2026 00:47:11] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:47:12,035] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:12] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:47:12,075] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:47:12] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:21,791] INFO in app: index breakdown: context_ms=2.3ms, render_ms=1.0ms
+[2026-05-13 00:47:21,791] INFO in app: GET / -> 200 in 3.7ms
+42.114.184.150 - - [13/May/2026 00:47:21] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:47:21,832] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:47:21] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:47:21,873] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:47:21] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:23,751] INFO in app: retail_customers breakdown: context_ms=4.2ms, render_ms=12.0ms
+[2026-05-13 00:47:23,753] INFO in app: GET /retail_customers -> 200 in 18.7ms
+42.114.184.150 - - [13/May/2026 00:47:23] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:47:23,821] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:23] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 00:47:24,159] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.184.150 - - [13/May/2026 00:47:24] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:25,661] INFO in app: index breakdown: context_ms=2.5ms, render_ms=0.9ms
+[2026-05-13 00:47:25,661] INFO in app: GET / -> 200 in 3.7ms
+42.114.184.150 - - [13/May/2026 00:47:25] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:47:25,718] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:25] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:47:25,762] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:47:25] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:26,588] INFO in app: company_transfers breakdown: context_ms=2.7ms, render_ms=0.4ms
+[2026-05-13 00:47:26,589] INFO in app: GET /company_transfers -> 200 in 3.5ms
+42.114.184.150 - - [13/May/2026 00:47:26] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 00:47:26,625] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:26] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 00:47:26,662] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:47:26] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:27,814] INFO in app: index breakdown: context_ms=2.3ms, render_ms=0.8ms
+[2026-05-13 00:47:27,814] INFO in app: GET / -> 200 in 3.5ms
+42.114.184.150 - - [13/May/2026 00:47:27] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:47:27,849] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:47:27] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:47:27,889] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:47:27] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:35,180] INFO in app: all_transactions breakdown: context_ms=5.8ms, render_ms=1.5ms
+[2026-05-13 00:47:35,181] INFO in app: GET /all_transactions -> 200 in 7.9ms
+42.114.184.150 - - [13/May/2026 00:47:35] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:47:35,219] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:35] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:47:35,260] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:47:35] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:46,615] INFO in app: index breakdown: context_ms=2.3ms, render_ms=1.4ms
+[2026-05-13 00:47:46,616] INFO in app: GET / -> 200 in 4.5ms
+42.114.184.150 - - [13/May/2026 00:47:46] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:47:46,655] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:47:46] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:47:46,689] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.5ms
+42.114.184.150 - - [13/May/2026 00:47:46] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:48,729] INFO in app: report_cty breakdown: context_ms=3.2ms, render_ms=0.5ms
+[2026-05-13 00:47:48,730] INFO in app: GET /report_cty -> 200 in 4.1ms
+42.114.184.150 - - [13/May/2026 00:47:48] "GET /report_cty HTTP/1.1" 200 -
+[2026-05-13 00:47:48,769] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:48] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 00:47:48,804] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:47:48] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:54,897] INFO in app: index breakdown: context_ms=2.2ms, render_ms=0.9ms
+[2026-05-13 00:47:54,898] INFO in app: GET / -> 200 in 3.4ms
+42.114.184.150 - - [13/May/2026 00:47:54] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:47:54,933] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:47:54] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:47:54,969] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:47:54] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:47:58,498] INFO in app: all_transactions breakdown: context_ms=3.8ms, render_ms=0.6ms
+[2026-05-13 00:47:58,498] INFO in app: GET /all_transactions -> 200 in 4.9ms
+42.114.184.150 - - [13/May/2026 00:47:58] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:47:58,535] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:47:58] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:47:58,569] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.184.150 - - [13/May/2026 00:47:58] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:48:05,694] INFO in app: all_transactions breakdown: context_ms=4.8ms, render_ms=1.8ms
+[2026-05-13 00:48:05,694] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 7.1ms
+42.114.184.150 - - [13/May/2026 00:48:05] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:48:05,761] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:48:05] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:48:05,811] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.184.150 - - [13/May/2026 00:48:05] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:50:26,162] INFO in app: all_transactions breakdown: context_ms=6.1ms, render_ms=2.5ms
+[2026-05-13 00:50:26,163] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 9.6ms
+42.114.184.150 - - [13/May/2026 00:50:26] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:50:26,239] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:50:26] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:50:26,267] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.0ms
+42.114.184.150 - - [13/May/2026 00:50:26] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+Database file: data_nganhang.db
+Mo tren iPhone/Safari: http://<IP-PUBLIC-CUA-SERVER>:5001
+Dat bien moi truong PUBLIC_IP de in ra dung duong dan truy cap.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://112.213.88.23:5001
+[33mPress CTRL+C to quit[0m
+[2026-05-13 00:52:17,980] INFO in app: all_transactions breakdown: context_ms=10.3ms, render_ms=55.6ms
+[2026-05-13 00:52:17,981] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 67.0ms
+127.0.0.1 - - [13/May/2026 00:52:17] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:52:33,349] INFO in app: all_transactions breakdown: context_ms=4.7ms, render_ms=2.2ms
+[2026-05-13 00:52:33,350] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 7.7ms
+42.114.184.150 - - [13/May/2026 00:52:33] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:52:33,423] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:52:33] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:52:33,461] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 6.1ms
+42.114.184.150 - - [13/May/2026 00:52:33] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:53:56,038] INFO in app: all_transactions breakdown: context_ms=6.5ms, render_ms=2.8ms
+[2026-05-13 00:53:56,038] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 10.4ms
+42.114.184.150 - - [13/May/2026 00:53:56] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:53:56,116] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:53:56] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:53:56,142] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 4.6ms
+42.114.184.150 - - [13/May/2026 00:53:56] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:53:57,754] INFO in app: all_transactions breakdown: context_ms=3.5ms, render_ms=1.3ms
+[2026-05-13 00:53:57,754] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 5.3ms
+42.114.184.150 - - [13/May/2026 00:53:57] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:53:57,828] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:53:57] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:53:57,860] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.4ms
+42.114.184.150 - - [13/May/2026 00:53:57] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:54:31,286] INFO in app: all_transactions breakdown: context_ms=5.1ms, render_ms=2.3ms
+[2026-05-13 00:54:31,287] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 8.3ms
+42.114.184.150 - - [13/May/2026 00:54:31] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:54:31,351] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:54:31] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:54:31,379] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.184.150 - - [13/May/2026 00:54:31] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+Database file: data_nganhang.db
+Mo tren iPhone/Safari: http://<IP-PUBLIC-CUA-SERVER>:5001
+Dat bien moi truong PUBLIC_IP de in ra dung duong dan truy cap.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://112.213.88.23:5001
+[33mPress CTRL+C to quit[0m
+[2026-05-13 00:55:08,117] INFO in app: all_transactions breakdown: context_ms=11.5ms, render_ms=88.2ms
+[2026-05-13 00:55:08,118] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 100.6ms
+42.114.184.150 - - [13/May/2026 00:55:08] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:55:08,182] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:55:08] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:55:08,232] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 6.4ms
+42.114.184.150 - - [13/May/2026 00:55:08] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:55:30,355] INFO in app: all_transactions breakdown: context_ms=5.1ms, render_ms=3.4ms
+[2026-05-13 00:55:30,356] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 9.4ms
+42.114.184.150 - - [13/May/2026 00:55:30] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:55:30,421] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:55:30] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 00:55:30,449] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.184.150 - - [13/May/2026 00:55:30] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:55:32,842] INFO in app: index breakdown: context_ms=2.2ms, render_ms=10.3ms
+[2026-05-13 00:55:32,843] INFO in app: GET / -> 200 in 12.8ms
+42.114.184.150 - - [13/May/2026 00:55:32] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:55:32,880] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:55:32] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:55:32,915] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:55:32] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:55:35,190] INFO in app: report_cty breakdown: context_ms=4.4ms, render_ms=38.8ms
+[2026-05-13 00:55:35,190] INFO in app: GET /report_cty -> 200 in 43.7ms
+42.114.184.150 - - [13/May/2026 00:55:35] "GET /report_cty HTTP/1.1" 200 -
+[2026-05-13 00:55:35,233] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:55:35] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 00:55:35,267] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:55:35] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:55:40,244] INFO in app: report_cty breakdown: context_ms=3.7ms, render_ms=1.7ms
+[2026-05-13 00:55:40,244] INFO in app: GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 6.0ms
+42.114.184.150 - - [13/May/2026 00:55:40] "GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:55:40,311] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:55:40] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 00:55:40,343] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.184.150 - - [13/May/2026 00:55:40] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:56:26,945] INFO in app: all_transactions breakdown: context_ms=5.2ms, render_ms=2.2ms
+[2026-05-13 00:56:26,945] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 8.4ms
+127.0.0.1 - - [13/May/2026 00:56:26] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:57:12,334] INFO in app: report_cty breakdown: context_ms=5.1ms, render_ms=2.3ms
+[2026-05-13 00:57:12,335] INFO in app: GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 8.2ms
+42.114.184.150 - - [13/May/2026 00:57:12] "GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:57:12,448] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.5ms
+42.114.184.150 - - [13/May/2026 00:57:12] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 00:57:12,466] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.1ms
+42.114.184.150 - - [13/May/2026 00:57:12] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+Database file: data_nganhang.db
+Mo tren iPhone/Safari: http://<IP-PUBLIC-CUA-SERVER>:5001
+Dat bien moi truong PUBLIC_IP de in ra dung duong dan truy cap.
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://112.213.88.23:5001
+[33mPress CTRL+C to quit[0m
+[2026-05-13 00:58:37,319] INFO in app: report_cty breakdown: context_ms=9.7ms, render_ms=58.3ms
+[2026-05-13 00:58:37,320] INFO in app: GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 68.8ms
+42.114.184.150 - - [13/May/2026 00:58:37] "GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:58:37,395] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:58:37] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 00:58:37,435] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 5.6ms
+42.114.184.150 - - [13/May/2026 00:58:37] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:58:52,428] INFO in app: report_cty breakdown: context_ms=4.2ms, render_ms=1.9ms
+[2026-05-13 00:58:52,428] INFO in app: GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 6.8ms
+42.114.184.150 - - [13/May/2026 00:58:52] "GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:58:52,503] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:58:52] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 00:58:52,533] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.8ms
+42.114.184.150 - - [13/May/2026 00:58:52] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:58:59,017] INFO in app: index breakdown: context_ms=2.5ms, render_ms=11.8ms
+[2026-05-13 00:58:59,017] INFO in app: GET / -> 200 in 14.7ms
+42.114.184.150 - - [13/May/2026 00:58:59] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:58:59,055] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:58:59] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:58:59,091] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:58:59] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:59:00,154] INFO in app: summary breakdown: context_ms=2.6ms, render_ms=33.3ms
+[2026-05-13 00:59:00,155] INFO in app: GET /summary -> 200 in 36.3ms
+42.114.184.150 - - [13/May/2026 00:59:00] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 00:59:00,196] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:59:00] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 00:59:00,249] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.184.150 - - [13/May/2026 00:59:00] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:59:04,588] INFO in app: index breakdown: context_ms=2.7ms, render_ms=0.9ms
+[2026-05-13 00:59:04,588] INFO in app: GET / -> 200 in 3.9ms
+42.114.184.150 - - [13/May/2026 00:59:04] "GET / HTTP/1.1" 200 -
+[2026-05-13 00:59:04,627] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+42.114.184.150 - - [13/May/2026 00:59:04] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 00:59:04,667] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:59:04] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:59:06,357] INFO in app: company_transfers breakdown: context_ms=3.8ms, render_ms=14.4ms
+[2026-05-13 00:59:06,357] INFO in app: GET /company_transfers -> 200 in 18.6ms
+42.114.184.150 - - [13/May/2026 00:59:06] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 00:59:06,396] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.2ms
+42.114.184.150 - - [13/May/2026 00:59:06] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 00:59:06,434] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.184.150 - - [13/May/2026 00:59:06] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:59:16,227] INFO in app: company_transfers breakdown: context_ms=3.7ms, render_ms=1.9ms
+[2026-05-13 00:59:16,227] INFO in app: GET /company_transfers?from_date=2026-05-04&to_date=2026-05-13&company=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 6.4ms
+42.114.184.150 - - [13/May/2026 00:59:16] "GET /company_transfers?from_date=2026-05-04&to_date=2026-05-13&company=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 00:59:16,294] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.4ms
+42.114.184.150 - - [13/May/2026 00:59:16] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 00:59:16,319] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.184.150 - - [13/May/2026 00:59:16] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 00:59:23,690] INFO in app: report_cty breakdown: context_ms=6.7ms, render_ms=1.5ms
+[2026-05-13 00:59:23,690] INFO in app: GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 8.7ms
+127.0.0.1 - - [13/May/2026 00:59:23] "GET /report_cty?from_date=2026-05-12&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 01:00:25,708] INFO in app: index breakdown: context_ms=5.2ms, render_ms=2.4ms
+[2026-05-13 01:00:25,709] INFO in app: GET / -> 200 in 9.1ms
+42.114.14.185 - - [13/May/2026 01:00:25] "GET / HTTP/1.1" 200 -
+[2026-05-13 01:00:25,815] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.4ms
+42.114.14.185 - - [13/May/2026 01:00:25] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 01:00:25,981] INFO in app: GET /favicon.ico -> 404 in 0.6ms
+42.114.14.185 - - [13/May/2026 01:00:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 01:00:34,478] INFO in app: index breakdown: context_ms=2.6ms, render_ms=1.9ms
+[2026-05-13 01:00:34,478] INFO in app: GET / -> 200 in 5.5ms
+42.114.14.185 - - [13/May/2026 01:00:34] "GET / HTTP/1.1" 200 -
+[2026-05-13 01:00:34,534] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 01:00:34] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 01:00:34,626] INFO in app: GET /static/finance-icon-180.png -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 01:00:34] "[36mGET /static/finance-icon-180.png HTTP/1.1[0m" 304 -
+[2026-05-13 01:00:41,287] INFO in app: index breakdown: context_ms=2.5ms, render_ms=0.8ms
+[2026-05-13 01:00:41,287] INFO in app: GET / -> 200 in 3.8ms
+42.114.14.185 - - [13/May/2026 01:00:41] "GET / HTTP/1.1" 200 -
+[2026-05-13 01:00:41,361] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.14.185 - - [13/May/2026 01:00:41] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 01:00:41,531] INFO in app: GET /favicon.ico -> 404 in 0.4ms
+42.114.14.185 - - [13/May/2026 01:00:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 01:00:41,532] INFO in app: GET /static/finance-icon-180.png -> 304 in 2.0ms
+42.114.14.185 - - [13/May/2026 01:00:41] "[36mGET /static/finance-icon-180.png HTTP/1.1[0m" 304 -
+[2026-05-13 01:01:01,458] INFO in app: index breakdown: context_ms=3.2ms, render_ms=2.1ms
+[2026-05-13 01:01:01,459] INFO in app: GET / -> 200 in 6.4ms
+42.114.14.185 - - [13/May/2026 01:01:01] "GET / HTTP/1.1" 200 -
+[2026-05-13 01:01:01,519] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 01:01:01] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 01:01:01,629] INFO in app: GET /static/finance-icon-180.png -> 304 in 0.5ms
+42.114.14.185 - - [13/May/2026 01:01:01] "[36mGET /static/finance-icon-180.png HTTP/1.1[0m" 304 -
+[2026-05-13 01:01:13,907] INFO in app: all_transactions breakdown: context_ms=4.8ms, render_ms=49.5ms
+[2026-05-13 01:01:13,908] INFO in app: GET /all_transactions -> 200 in 55.0ms
+42.114.14.185 - - [13/May/2026 01:01:13] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 01:01:13,960] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 01:01:13] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 01:01:24,705] INFO in app: summary breakdown: context_ms=5.9ms, render_ms=3.0ms
+[2026-05-13 01:01:24,706] INFO in app: GET /summary -> 200 in 10.1ms
+42.114.14.185 - - [13/May/2026 01:01:24] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 01:01:24,784] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.14.185 - - [13/May/2026 01:01:24] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 01:01:29,487] INFO in app: index breakdown: context_ms=2.5ms, render_ms=1.2ms
+[2026-05-13 01:01:29,488] INFO in app: GET / -> 200 in 4.2ms
+42.114.14.185 - - [13/May/2026 01:01:29] "GET / HTTP/1.1" 200 -
+[2026-05-13 01:01:29,539] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.14.185 - - [13/May/2026 01:01:29] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+205.210.31.216 - - [13/May/2026 05:03:59] code 400, message Bad request version ('À\x13À')
+205.210.31.216 - - [13/May/2026 05:03:59] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x80¾M3óèä\x87§ÆëÔ¿øÜ$q7â\x04\x08eu\x11xÿæ1\x97x¾\x03 }B1\x96à.\x8a_è\x08¾ZN\x0c\x04\x05ê Ã\x98Ìµ\x18ÌÍê\x91\x9bB>i\x99\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+205.210.31.216 - - [13/May/2026 05:04:00] code 400, message Bad request syntax ('\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03;ah\x04¨~Øªâ\x1c')
+205.210.31.216 - - [13/May/2026 05:04:00] "[35m[1m\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03;ah\x04¨~Øªâ\x1c[0m" HTTPStatus.BAD_REQUEST -
+[2026-05-13 06:02:47,449] INFO in app: index breakdown: context_ms=3.3ms, render_ms=3.1ms
+[2026-05-13 06:02:47,451] INFO in app: GET / -> 200 in 7.8ms
+40.77.167.67 - - [13/May/2026 06:02:47] "GET / HTTP/1.1" 200 -
+[2026-05-13 07:23:52,513] INFO in app: index breakdown: context_ms=3.9ms, render_ms=2.8ms
+[2026-05-13 07:23:52,514] INFO in app: GET / -> 200 in 8.3ms
+42.114.14.185 - - [13/May/2026 07:23:52] "GET / HTTP/1.1" 200 -
+[2026-05-13 07:23:52,678] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.6ms
+42.114.14.185 - - [13/May/2026 07:23:52] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 07:23:52,877] INFO in app: GET /favicon.ico -> 404 in 0.7ms
+42.114.14.185 - - [13/May/2026 07:23:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 07:23:52,880] INFO in app: GET /static/finance-icon-180.png -> 304 in 0.8ms
+42.114.14.185 - - [13/May/2026 07:23:52] "[36mGET /static/finance-icon-180.png HTTP/1.1[0m" 304 -
+[2026-05-13 07:23:57,347] INFO in app: summary breakdown: context_ms=6.6ms, render_ms=2.6ms
+[2026-05-13 07:23:57,348] INFO in app: GET /summary -> 200 in 10.0ms
+42.114.14.185 - - [13/May/2026 07:23:57] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 07:23:57,430] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 07:23:57] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 07:24:28,600] INFO in app: add_summary_entry breakdown: write_ms=10.6ms, redirect_ms=0.8ms
+[2026-05-13 07:24:28,600] INFO in app: POST /add_summary_entry -> 302 in 12.3ms
+42.114.14.185 - - [13/May/2026 07:24:28] "[32mPOST /add_summary_entry HTTP/1.1[0m" 302 -
+[2026-05-13 07:24:28,654] INFO in app: summary breakdown: context_ms=4.6ms, render_ms=2.4ms
+[2026-05-13 07:24:28,654] INFO in app: GET /summary?date=2026-05-13 -> 200 in 7.5ms
+42.114.14.185 - - [13/May/2026 07:24:28] "GET /summary?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 07:24:28,779] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.8ms
+42.114.14.185 - - [13/May/2026 07:24:28] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 08:04:37,611] INFO in app: index breakdown: context_ms=4.9ms, render_ms=2.3ms
+[2026-05-13 08:04:37,612] INFO in app: GET / -> 200 in 8.7ms
+42.114.14.185 - - [13/May/2026 08:04:37] "GET / HTTP/1.1" 200 -
+[2026-05-13 08:04:37,719] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.7ms
+42.114.14.185 - - [13/May/2026 08:04:37] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 08:04:37,894] INFO in app: GET /favicon.ico -> 404 in 0.5ms
+42.114.14.185 - - [13/May/2026 08:04:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 08:05:04,766] INFO in app: submit breakdown: load_ms=85.0ms, compute_ms=1.8ms, save_ms=109.6ms, redirect_ms=0.3ms
+[2026-05-13 08:05:04,767] INFO in app: POST /submit -> 302 in 197.3ms
+42.114.14.185 - - [13/May/2026 08:05:04] "[32mPOST /submit HTTP/1.1[0m" 302 -
+[2026-05-13 08:05:04,819] INFO in app: report_cty breakdown: context_ms=5.5ms, render_ms=3.4ms
+[2026-05-13 08:05:04,819] INFO in app: GET /report_cty?date=2026-05-13 -> 200 in 9.5ms
+42.114.14.185 - - [13/May/2026 08:05:04] "GET /report_cty?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 08:05:04,912] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.14.185 - - [13/May/2026 08:05:04] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 08:05:08,371] INFO in app: index breakdown: context_ms=2.6ms, render_ms=1.4ms
+[2026-05-13 08:05:08,371] INFO in app: GET / -> 200 in 4.5ms
+42.114.14.185 - - [13/May/2026 08:05:08] "GET / HTTP/1.1" 200 -
+[2026-05-13 08:05:08,424] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.6ms
+42.114.14.185 - - [13/May/2026 08:05:08] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 08:05:11,058] INFO in app: all_transactions breakdown: context_ms=4.7ms, render_ms=1.4ms
+[2026-05-13 08:05:11,059] INFO in app: GET /all_transactions -> 200 in 6.6ms
+42.114.14.185 - - [13/May/2026 08:05:11] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 08:05:11,127] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.14.185 - - [13/May/2026 08:05:11] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 08:05:35,412] INFO in app: index breakdown: context_ms=4.2ms, render_ms=2.6ms
+[2026-05-13 08:05:35,413] INFO in app: GET / -> 200 in 8.1ms
+42.114.14.185 - - [13/May/2026 08:05:35] "GET / HTTP/1.1" 200 -
+[2026-05-13 08:05:35,515] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.14.185 - - [13/May/2026 08:05:35] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:23:38,495] INFO in app: index breakdown: context_ms=3.4ms, render_ms=2.9ms
+[2026-05-13 09:23:38,496] INFO in app: GET / -> 200 in 7.8ms
+42.114.14.185 - - [13/May/2026 09:23:38] "GET / HTTP/1.1" 200 -
+[2026-05-13 09:23:38,922] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.9ms
+42.114.14.185 - - [13/May/2026 09:23:38] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:23:39,016] INFO in app: GET /static/finance-icon-180.png -> 304 in 1.3ms
+42.114.14.185 - - [13/May/2026 09:23:39] "[36mGET /static/finance-icon-180.png HTTP/1.1[0m" 304 -
+[2026-05-13 09:24:12,957] INFO in app: submit breakdown: load_ms=68.5ms, compute_ms=2.2ms, save_ms=127.9ms, redirect_ms=0.8ms
+[2026-05-13 09:24:12,958] INFO in app: POST /submit -> 302 in 200.3ms
+42.114.14.185 - - [13/May/2026 09:24:12] "[32mPOST /submit HTTP/1.1[0m" 302 -
+[2026-05-13 09:24:13,006] INFO in app: report_cty breakdown: context_ms=3.4ms, render_ms=1.1ms
+[2026-05-13 09:24:13,006] INFO in app: GET /report_cty?date=2026-05-13 -> 200 in 4.9ms
+42.114.14.185 - - [13/May/2026 09:24:13] "GET /report_cty?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 09:24:13,154] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.7ms
+42.114.14.185 - - [13/May/2026 09:24:13] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:24:30,414] INFO in app: index breakdown: context_ms=2.2ms, render_ms=1.1ms
+[2026-05-13 09:24:30,414] INFO in app: GET / -> 200 in 3.8ms
+42.114.14.185 - - [13/May/2026 09:24:30] "GET / HTTP/1.1" 200 -
+[2026-05-13 09:24:30,462] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 09:24:30] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:24:33,757] INFO in app: all_transactions breakdown: context_ms=4.2ms, render_ms=1.5ms
+[2026-05-13 09:24:33,758] INFO in app: GET /all_transactions -> 200 in 6.3ms
+42.114.14.185 - - [13/May/2026 09:24:33] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 09:24:33,808] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 09:24:33] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:24:39,193] INFO in app: delete_transaction breakdown: write_ms=7.2ms, redirect_ms=0.4ms
+[2026-05-13 09:24:39,193] INFO in app: GET /delete_transaction/84 -> 302 in 8.4ms
+42.114.14.185 - - [13/May/2026 09:24:39] "[32mGET /delete_transaction/84 HTTP/1.1[0m" 302 -
+[2026-05-13 09:24:39,245] INFO in app: all_transactions breakdown: context_ms=6.3ms, render_ms=1.9ms
+[2026-05-13 09:24:39,245] INFO in app: GET /all_transactions -> 200 in 8.7ms
+42.114.14.185 - - [13/May/2026 09:24:39] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 09:24:39,379] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 09:24:39] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:24:43,392] INFO in app: index breakdown: context_ms=2.0ms, render_ms=0.9ms
+[2026-05-13 09:24:43,393] INFO in app: GET / -> 200 in 3.3ms
+42.114.14.185 - - [13/May/2026 09:24:43] "GET / HTTP/1.1" 200 -
+[2026-05-13 09:24:43,443] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.14.185 - - [13/May/2026 09:24:43] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:24:43,517] INFO in app: company_transfers breakdown: context_ms=4.8ms, render_ms=0.8ms
+[2026-05-13 09:24:43,517] INFO in app: GET /company_transfers -> 200 in 6.0ms
+52.167.144.167 - - [13/May/2026 09:24:43] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 09:25:08,649] INFO in app: submit breakdown: load_ms=63.7ms, compute_ms=2.9ms, save_ms=106.4ms, redirect_ms=0.7ms
+[2026-05-13 09:25:08,649] INFO in app: POST /submit -> 302 in 174.4ms
+42.114.14.185 - - [13/May/2026 09:25:08] "[32mPOST /submit HTTP/1.1[0m" 302 -
+[2026-05-13 09:25:09,035] INFO in app: report_cty breakdown: context_ms=3.4ms, render_ms=1.0ms
+[2026-05-13 09:25:09,035] INFO in app: GET /report_cty?date=2026-05-13 -> 200 in 4.8ms
+42.114.14.185 - - [13/May/2026 09:25:09] "GET /report_cty?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 09:25:09,136] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 09:25:09] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:25:14,496] INFO in app: index breakdown: context_ms=2.4ms, render_ms=1.1ms
+[2026-05-13 09:25:14,496] INFO in app: GET / -> 200 in 4.0ms
+42.114.14.185 - - [13/May/2026 09:25:14] "GET / HTTP/1.1" 200 -
+[2026-05-13 09:25:14,641] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.14.185 - - [13/May/2026 09:25:14] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:25:27,429] INFO in app: submit breakdown: load_ms=48.2ms, compute_ms=1.3ms, save_ms=114.4ms, redirect_ms=0.5ms
+[2026-05-13 09:25:27,430] INFO in app: POST /submit -> 302 in 165.1ms
+42.114.14.185 - - [13/May/2026 09:25:27] "[32mPOST /submit HTTP/1.1[0m" 302 -
+[2026-05-13 09:25:27,629] INFO in app: report_cty breakdown: context_ms=3.1ms, render_ms=0.9ms
+[2026-05-13 09:25:27,629] INFO in app: GET /report_cty?date=2026-05-13 -> 200 in 4.4ms
+42.114.14.185 - - [13/May/2026 09:25:27] "GET /report_cty?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 09:25:27,733] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 09:25:27] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:31:44,297] INFO in app: company_transfers breakdown: context_ms=5.8ms, render_ms=2.4ms
+[2026-05-13 09:31:44,298] INFO in app: GET /company_transfers -> 200 in 9.7ms
+42.114.14.185 - - [13/May/2026 09:31:44] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 09:31:44,369] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.5ms
+42.114.14.185 - - [13/May/2026 09:31:44] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:31:58,721] INFO in app: add_company_transfer breakdown: write_ms=8.1ms, redirect_ms=0.4ms
+[2026-05-13 09:31:58,721] INFO in app: POST /add_company_transfer -> 302 in 9.3ms
+42.114.14.185 - - [13/May/2026 09:31:58] "[32mPOST /add_company_transfer HTTP/1.1[0m" 302 -
+[2026-05-13 09:31:58,782] INFO in app: company_transfers breakdown: context_ms=2.8ms, render_ms=1.0ms
+[2026-05-13 09:31:58,783] INFO in app: GET /company_transfers -> 200 in 4.2ms
+42.114.14.185 - - [13/May/2026 09:31:58] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 09:31:58,861] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.5ms
+42.114.14.185 - - [13/May/2026 09:31:58] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:35:01,958] INFO in app: add_company_transfer breakdown: write_ms=9.5ms, redirect_ms=1.1ms
+[2026-05-13 09:35:01,959] INFO in app: POST /add_company_transfer -> 302 in 12.7ms
+42.114.14.185 - - [13/May/2026 09:35:01] "[32mPOST /add_company_transfer HTTP/1.1[0m" 302 -
+[2026-05-13 09:35:02,004] INFO in app: company_transfers breakdown: context_ms=3.2ms, render_ms=1.5ms
+[2026-05-13 09:35:02,005] INFO in app: GET /company_transfers -> 200 in 5.0ms
+42.114.14.185 - - [13/May/2026 09:35:02] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 09:35:02,105] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.0ms
+42.114.14.185 - - [13/May/2026 09:35:02] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:37:29,487] INFO in app: index breakdown: context_ms=3.4ms, render_ms=2.8ms
+[2026-05-13 09:37:29,488] INFO in app: GET / -> 200 in 7.7ms
+42.114.14.185 - - [13/May/2026 09:37:29] "GET / HTTP/1.1" 200 -
+[2026-05-13 09:37:29,553] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.0ms
+42.114.14.185 - - [13/May/2026 09:37:29] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:37:30,568] INFO in app: company_transfers breakdown: context_ms=2.9ms, render_ms=0.5ms
+[2026-05-13 09:37:30,569] INFO in app: GET /company_transfers -> 200 in 3.7ms
+42.114.14.185 - - [13/May/2026 09:37:30] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 09:37:30,628] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 09:37:30] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:37:34,625] INFO in app: index breakdown: context_ms=4.0ms, render_ms=1.6ms
+[2026-05-13 09:37:34,625] INFO in app: GET / -> 200 in 6.2ms
+42.114.14.185 - - [13/May/2026 09:37:34] "GET / HTTP/1.1" 200 -
+[2026-05-13 09:37:34,675] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 09:37:34] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:50:21,236] INFO in app: index breakdown: context_ms=4.3ms, render_ms=4.4ms
+[2026-05-13 09:50:21,237] INFO in app: GET / -> 200 in 9.9ms
+42.114.14.185 - - [13/May/2026 09:50:21] "GET / HTTP/1.1" 200 -
+[2026-05-13 09:50:21,422] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.14.185 - - [13/May/2026 09:50:21] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 09:50:21,589] INFO in app: GET /static/finance-icon-180.png -> 304 in 1.6ms
+42.114.14.185 - - [13/May/2026 09:50:21] "[36mGET /static/finance-icon-180.png HTTP/1.1[0m" 304 -
+[2026-05-13 09:50:38,136] INFO in app: submit breakdown: load_ms=73.5ms, compute_ms=1.8ms, save_ms=110.2ms, redirect_ms=0.5ms
+[2026-05-13 09:50:38,136] INFO in app: POST /submit -> 302 in 186.6ms
+42.114.14.185 - - [13/May/2026 09:50:38] "[32mPOST /submit HTTP/1.1[0m" 302 -
+[2026-05-13 09:50:38,629] INFO in app: report_cty breakdown: context_ms=4.2ms, render_ms=1.1ms
+[2026-05-13 09:50:38,629] INFO in app: GET /report_cty?date=2026-05-13 -> 200 in 5.7ms
+42.114.14.185 - - [13/May/2026 09:50:38] "GET /report_cty?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 09:50:38,734] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.14.185 - - [13/May/2026 09:50:38] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:40:45,705] INFO in app: index breakdown: context_ms=3.3ms, render_ms=2.4ms
+[2026-05-13 10:40:45,706] INFO in app: GET / -> 200 in 6.9ms
+42.114.14.185 - - [13/May/2026 10:40:45] "GET / HTTP/1.1" 200 -
+[2026-05-13 10:40:45,839] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.0ms
+42.114.14.185 - - [13/May/2026 10:40:45] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+42.114.14.185 - - [13/May/2026 10:40:58] code 400, message Bad request version ('À\x13À')
+42.114.14.185 - - [13/May/2026 10:40:58] "[35m[1m\x16\x03\x01\x00í\x01\x00\x00é\x03\x03öQÖÓÎ\x8e1\x88\x9cüôvx6\x9cØ\x11\x10ÍM\x86Mí\x08ÌàóÜ|B\x95´ \x9fo9O÷\x0el\x11Ön\x0dû}\x14Ù­|\x03¹Fÿ\x87³,ØcJ<\x83\x8aÑë\x00"\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+42.114.14.185 - - [13/May/2026 10:40:59] code 400, message Bad request version ('À\x13À')
+42.114.14.185 - - [13/May/2026 10:40:59] "[35m[1m\x16\x03\x01\x00í\x01\x00\x00é\x03\x03rærÿÎz#:\x84+\x0f\x86*L\x15è½¤×c¹ú®LïÀ\x81Õ,9k\x04 Ä\\\x89¨rKë£ö\x90ùÕ\x92\x0f\x8e\x91w\x18RÑ= \x84ª\x14êØwL#Êù\x00"\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+42.114.14.185 - - [13/May/2026 10:40:59] code 400, message Bad request version ('À\x13À')
+42.114.14.185 - - [13/May/2026 10:40:59] "[35m[1m\x16\x03\x01\x00í\x01\x00\x00é\x03\x03±l6Ø×ºi±Å\x85\x9d\x01¬\x94a2þ\x12Q\x11:öi\x1c÷ÖáÈðéª© \x8bäÇåÄÕÃ3Ô\x14*@Ò=ÉO\x9cÈf¨\x12÷Å\x0eÒ\x05M\x8dIªp\x1d\x00"\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+42.114.14.185 - - [13/May/2026 10:40:59] code 400, message Bad request version ('Õ%crÒÃ°')
+42.114.14.185 - - [13/May/2026 10:40:59] "[35m[1m\x16\x03\x01\x00í\x01\x00\x00é\x03\x03pý\x85-eæFÚÀP\x92\x95¼\x0cÀMwAT\\âò$t\x83\x01"\x1d×l\x88À  [j\x8a~IsHàüñè Õ%crÒÃ°[0m" HTTPStatus.BAD_REQUEST -
+[2026-05-13 10:41:08,119] INFO in app: index breakdown: context_ms=2.6ms, render_ms=1.2ms
+[2026-05-13 10:41:08,120] INFO in app: GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -> 200 in 4.2ms
+42.114.14.185 - - [13/May/2026 10:41:08] "GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo HTTP/1.1" 200 -
+[2026-05-13 10:41:08,312] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.5ms
+42.114.14.185 - - [13/May/2026 10:41:08] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 10:41:08,371] INFO in app: GET /static/money-input.js?v=20260511 -> 200 in 0.8ms
+42.114.14.185 - - [13/May/2026 10:41:08] "GET /static/money-input.js?v=20260511 HTTP/1.1" 200 -
+[2026-05-13 10:41:23,489] INFO in app: index breakdown: context_ms=2.4ms, render_ms=0.8ms
+[2026-05-13 10:41:23,490] INFO in app: GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -> 200 in 3.7ms
+42.114.14.185 - - [13/May/2026 10:41:23] "GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo HTTP/1.1" 200 -
+[2026-05-13 10:41:23,576] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+42.114.14.185 - - [13/May/2026 10:41:23] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:41:23,577] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 10:41:23] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 10:41:32,537] INFO in app: index breakdown: context_ms=4.5ms, render_ms=1.8ms
+[2026-05-13 10:41:32,537] INFO in app: GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -> 200 in 7.0ms
+42.114.14.185 - - [13/May/2026 10:41:32] "GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo HTTP/1.1" 200 -
+[2026-05-13 10:41:33,978] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+42.114.14.185 - - [13/May/2026 10:41:33] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 10:41:34,017] INFO in app: GET /static/money-input.js?v=20260511 -> 200 in 0.9ms
+42.114.14.185 - - [13/May/2026 10:41:34] "GET /static/money-input.js?v=20260511 HTTP/1.1" 200 -
+[2026-05-13 10:41:34,298] INFO in app: GET /favicon.ico -> 404 in 0.5ms
+42.114.14.185 - - [13/May/2026 10:41:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 10:42:13,460] INFO in app: index breakdown: context_ms=2.8ms, render_ms=1.4ms
+[2026-05-13 10:42:13,461] INFO in app: GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -> 200 in 5.0ms
+42.114.14.185 - - [13/May/2026 10:42:13] "GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo HTTP/1.1" 200 -
+[2026-05-13 10:42:13,544] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.5ms
+42.114.14.185 - - [13/May/2026 10:42:13] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:42:13,544] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 10:42:13] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 10:42:46,959] INFO in app: index breakdown: context_ms=2.9ms, render_ms=1.3ms
+[2026-05-13 10:42:46,959] INFO in app: GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -> 200 in 4.9ms
+42.114.14.185 - - [13/May/2026 10:42:46] "GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo HTTP/1.1" 200 -
+[2026-05-13 10:42:47,011] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+42.114.14.185 - - [13/May/2026 10:42:47] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:42:47,039] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 10:42:47] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 10:44:15,868] INFO in app: GET /apple-touch-icon-precomposed.png -> 404 in 0.9ms
+42.114.14.185 - - [13/May/2026 10:44:15] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+[2026-05-13 10:44:15,891] INFO in app: GET /apple-touch-icon.png -> 404 in 0.3ms
+42.114.14.185 - - [13/May/2026 10:44:15] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+[2026-05-13 10:44:15,897] INFO in app: GET /favicon.ico -> 404 in 1.5ms
+42.114.14.185 - - [13/May/2026 10:44:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 10:44:15,899] INFO in app: GET /static/finance-icon-180.png -> 200 in 5.1ms
+42.114.14.185 - - [13/May/2026 10:44:15] "GET /static/finance-icon-180.png HTTP/1.1" 200 -
+[2026-05-13 10:44:48,784] INFO in app: GET /apple-touch-icon-precomposed.png -> 404 in 0.9ms
+42.114.14.185 - - [13/May/2026 10:44:48] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+[2026-05-13 10:44:48,834] INFO in app: GET /favicon.ico -> 404 in 0.7ms
+42.114.14.185 - - [13/May/2026 10:44:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 10:44:48,836] INFO in app: GET /apple-touch-icon.png -> 404 in 0.2ms
+42.114.14.185 - - [13/May/2026 10:44:48] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+[2026-05-13 10:44:48,838] INFO in app: GET /static/finance-icon-180.png -> 200 in 2.3ms
+42.114.14.185 - - [13/May/2026 10:44:48] "GET /static/finance-icon-180.png HTTP/1.1" 200 -
+[2026-05-13 10:45:40,069] INFO in app: index breakdown: context_ms=5.2ms, render_ms=2.2ms
+[2026-05-13 10:45:40,070] INFO in app: GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -> 200 in 8.3ms
+42.114.14.185 - - [13/May/2026 10:45:40] "GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo HTTP/1.1" 200 -
+[2026-05-13 10:45:40,166] INFO in app: GET /apple-touch-icon-120x120-precomposed.png -> 404 in 0.8ms
+42.114.14.185 - - [13/May/2026 10:45:40] "[33mGET /apple-touch-icon-120x120-precomposed.png HTTP/1.1[0m" 404 -
+[2026-05-13 10:45:40,297] INFO in app: GET /apple-touch-icon-120x120.png -> 404 in 0.3ms
+42.114.14.185 - - [13/May/2026 10:45:40] "[33mGET /apple-touch-icon-120x120.png HTTP/1.1[0m" 404 -
+[2026-05-13 10:45:40,407] INFO in app: GET /static/finance-icon-180.png -> 200 in 1.6ms
+42.114.14.185 - - [13/May/2026 10:45:40] "GET /static/finance-icon-180.png HTTP/1.1" 200 -
+[2026-05-13 10:45:56,895] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+42.114.14.185 - - [13/May/2026 10:45:56] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 10:46:43,501] INFO in app: submit breakdown: load_ms=86.9ms, compute_ms=2.9ms, save_ms=117.5ms, redirect_ms=0.6ms
+[2026-05-13 10:46:43,502] INFO in app: POST /submit -> 302 in 208.5ms
+42.114.14.185 - - [13/May/2026 10:46:43] "[32mPOST /submit HTTP/1.1[0m" 302 -
+[2026-05-13 10:46:43,596] INFO in app: report_cty breakdown: context_ms=3.4ms, render_ms=1.3ms
+[2026-05-13 10:46:43,596] INFO in app: GET /report_cty?date=2026-05-13 -> 200 in 5.1ms
+42.114.14.185 - - [13/May/2026 10:46:43] "GET /report_cty?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 10:46:43,678] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 10:46:43] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 10:46:43,745] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.14.185 - - [13/May/2026 10:46:43] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:46:47,437] INFO in app: index breakdown: context_ms=3.6ms, render_ms=1.5ms
+[2026-05-13 10:46:47,437] INFO in app: GET / -> 200 in 5.8ms
+42.114.14.185 - - [13/May/2026 10:46:47] "GET / HTTP/1.1" 200 -
+[2026-05-13 10:46:47,498] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 10:46:47] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 10:46:47,807] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.14.185 - - [13/May/2026 10:46:47] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:46:48,096] INFO in app: report_cty breakdown: context_ms=3.4ms, render_ms=0.9ms
+[2026-05-13 10:46:48,096] INFO in app: GET /report_cty -> 200 in 4.6ms
+42.114.14.185 - - [13/May/2026 10:46:48] "GET /report_cty HTTP/1.1" 200 -
+[2026-05-13 10:46:48,148] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.2ms
+42.114.14.185 - - [13/May/2026 10:46:48] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 10:46:48,194] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.5ms
+42.114.14.185 - - [13/May/2026 10:46:48] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:46:49,538] INFO in app: index breakdown: context_ms=2.1ms, render_ms=0.9ms
+[2026-05-13 10:46:49,539] INFO in app: GET / -> 200 in 3.4ms
+42.114.14.185 - - [13/May/2026 10:46:49] "GET / HTTP/1.1" 200 -
+[2026-05-13 10:46:49,607] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 10:46:49] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 10:46:49,656] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 10:46:49] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:47:08,783] INFO in app: report_cty breakdown: context_ms=4.3ms, render_ms=1.2ms
+[2026-05-13 10:47:08,783] INFO in app: GET /report_cty -> 200 in 6.1ms
+42.114.14.185 - - [13/May/2026 10:47:08] "GET /report_cty HTTP/1.1" 200 -
+[2026-05-13 10:47:08,840] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 10:47:08] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 10:47:08,929] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 10:47:08] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:47:12,537] INFO in app: report_cty breakdown: context_ms=5.6ms, render_ms=1.4ms
+[2026-05-13 10:47:12,537] INFO in app: GET /report_cty?from_date=2026-05-13&to_date=2026-05-13&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 7.6ms
+42.114.14.185 - - [13/May/2026 10:47:12] "GET /report_cty?from_date=2026-05-13&to_date=2026-05-13&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 10:47:12,654] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 10:47:12] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 10:47:12,699] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 10:47:12] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:47:17,811] INFO in app: index breakdown: context_ms=3.0ms, render_ms=1.2ms
+[2026-05-13 10:47:17,811] INFO in app: GET / -> 200 in 4.7ms
+42.114.14.185 - - [13/May/2026 10:47:17] "GET / HTTP/1.1" 200 -
+[2026-05-13 10:47:17,862] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 10:47:17] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 10:47:17,906] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 10:47:17] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 10:47:18,989] INFO in app: summary breakdown: context_ms=3.7ms, render_ms=1.7ms
+[2026-05-13 10:47:18,990] INFO in app: GET /summary -> 200 in 6.0ms
+42.114.14.185 - - [13/May/2026 10:47:18] "GET /summary HTTP/1.1" 200 -
+[2026-05-13 10:47:19,041] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 10:47:19] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 10:47:19,108] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 10:47:19] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:06:11,272] INFO in app: index breakdown: context_ms=3.4ms, render_ms=2.0ms
+[2026-05-13 11:06:11,273] INFO in app: GET / -> 200 in 6.4ms
+42.114.14.185 - - [13/May/2026 11:06:11] "GET / HTTP/1.1" 200 -
+[2026-05-13 11:06:11,383] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 11:06:11] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:06:11,541] INFO in app: GET /static/finance-icon-180.png -> 304 in 0.7ms
+42.114.14.185 - - [13/May/2026 11:06:11] "[36mGET /static/finance-icon-180.png HTTP/1.1[0m" 304 -
+[2026-05-13 11:06:38,635] INFO in app: submit breakdown: load_ms=54.9ms, compute_ms=1.7ms, save_ms=94.8ms, redirect_ms=0.6ms
+[2026-05-13 11:06:38,636] INFO in app: POST /submit -> 302 in 152.7ms
+42.114.14.185 - - [13/May/2026 11:06:38] "[32mPOST /submit HTTP/1.1[0m" 302 -
+[2026-05-13 11:06:38,679] INFO in app: report_cty breakdown: context_ms=4.2ms, render_ms=1.6ms
+[2026-05-13 11:06:38,680] INFO in app: GET /report_cty?date=2026-05-13 -> 200 in 6.2ms
+42.114.14.185 - - [13/May/2026 11:06:38] "GET /report_cty?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 11:06:38,829] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 11:06:38] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:06:40,600] INFO in app: index breakdown: context_ms=3.2ms, render_ms=1.7ms
+[2026-05-13 11:06:40,600] INFO in app: GET / -> 200 in 5.6ms
+42.114.14.185 - - [13/May/2026 11:06:40] "GET / HTTP/1.1" 200 -
+[2026-05-13 11:06:40,655] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 11:06:40] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:07:06,764] INFO in app: submit breakdown: load_ms=89.3ms, compute_ms=2.7ms, save_ms=101.9ms, redirect_ms=0.4ms
+[2026-05-13 11:07:06,764] INFO in app: POST /submit -> 302 in 195.0ms
+42.114.14.185 - - [13/May/2026 11:07:06] "[32mPOST /submit HTTP/1.1[0m" 302 -
+[2026-05-13 11:07:07,419] INFO in app: report_cty breakdown: context_ms=6.2ms, render_ms=2.2ms
+[2026-05-13 11:07:07,420] INFO in app: GET /report_cty?date=2026-05-13 -> 200 in 9.1ms
+42.114.14.185 - - [13/May/2026 11:07:07] "GET /report_cty?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 11:07:07,692] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+42.114.14.185 - - [13/May/2026 11:07:07] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:07:22,917] INFO in app: all_transactions breakdown: context_ms=5.6ms, render_ms=3.1ms
+[2026-05-13 11:07:22,918] INFO in app: GET /all_transactions -> 200 in 9.9ms
+42.114.14.185 - - [13/May/2026 11:07:22] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 11:07:22,990] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.7ms
+42.114.14.185 - - [13/May/2026 11:07:22] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:07:27,598] INFO in app: all_transactions breakdown: context_ms=3.7ms, render_ms=0.8ms
+[2026-05-13 11:07:27,599] INFO in app: GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=SAMSUNG+C+H%E1%BA%B0NG&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 4.8ms
+42.114.14.185 - - [13/May/2026 11:07:27] "GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=SAMSUNG+C+HẰNG&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 11:07:27,640] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+42.114.14.185 - - [13/May/2026 11:07:27] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:24:06,983] INFO in app: GET /submit -> 405 in 1.4ms
+40.77.167.79 - - [13/May/2026 11:24:06] "[31m[1mGET /submit HTTP/1.1[0m" 405 -
+[2026-05-13 11:29:44,474] INFO in app: index breakdown: context_ms=3.6ms, render_ms=1.8ms
+[2026-05-13 11:29:44,475] INFO in app: GET / -> 200 in 6.4ms
+42.114.14.185 - - [13/May/2026 11:29:44] "GET / HTTP/1.1" 200 -
+[2026-05-13 11:29:44,655] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+42.114.14.185 - - [13/May/2026 11:29:44] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:30:05,564] INFO in app: submit breakdown: load_ms=72.4ms, compute_ms=2.5ms, save_ms=124.0ms, redirect_ms=0.7ms
+[2026-05-13 11:30:05,564] INFO in app: POST /submit -> 302 in 200.3ms
+42.114.14.185 - - [13/May/2026 11:30:05] "[32mPOST /submit HTTP/1.1[0m" 302 -
+[2026-05-13 11:30:05,617] INFO in app: report_cty breakdown: context_ms=4.3ms, render_ms=1.4ms
+[2026-05-13 11:30:05,617] INFO in app: GET /report_cty?date=2026-05-13 -> 200 in 6.1ms
+42.114.14.185 - - [13/May/2026 11:30:05] "GET /report_cty?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 11:30:05,733] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.6ms
+42.114.14.185 - - [13/May/2026 11:30:05] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:30:09,491] INFO in app: index breakdown: context_ms=2.7ms, render_ms=1.1ms
+[2026-05-13 11:30:09,492] INFO in app: GET / -> 200 in 4.4ms
+42.114.14.185 - - [13/May/2026 11:30:09] "GET / HTTP/1.1" 200 -
+[2026-05-13 11:30:09,540] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 11:30:09] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:30:10,120] INFO in app: company_transfers breakdown: context_ms=2.5ms, render_ms=0.6ms
+[2026-05-13 11:30:10,120] INFO in app: GET /company_transfers -> 200 in 3.4ms
+42.114.14.185 - - [13/May/2026 11:30:10] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 11:30:10,173] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 11:30:10] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:30:30,176] INFO in app: add_company_transfer breakdown: write_ms=6.4ms, redirect_ms=0.3ms
+[2026-05-13 11:30:30,177] INFO in app: POST /add_company_transfer -> 302 in 7.3ms
+42.114.14.185 - - [13/May/2026 11:30:30] "[32mPOST /add_company_transfer HTTP/1.1[0m" 302 -
+[2026-05-13 11:30:30,215] INFO in app: company_transfers breakdown: context_ms=2.9ms, render_ms=0.9ms
+[2026-05-13 11:30:30,215] INFO in app: GET /company_transfers -> 200 in 4.6ms
+42.114.14.185 - - [13/May/2026 11:30:30] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 11:30:30,327] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+42.114.14.185 - - [13/May/2026 11:30:30] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:30:32,181] INFO in app: index breakdown: context_ms=2.2ms, render_ms=0.9ms
+[2026-05-13 11:30:32,181] INFO in app: GET / -> 200 in 3.6ms
+42.114.14.185 - - [13/May/2026 11:30:32] "GET / HTTP/1.1" 200 -
+[2026-05-13 11:30:32,226] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 11:30:32] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:30:34,073] INFO in app: all_transactions breakdown: context_ms=3.9ms, render_ms=1.3ms
+[2026-05-13 11:30:34,074] INFO in app: GET /all_transactions -> 200 in 5.8ms
+42.114.14.185 - - [13/May/2026 11:30:34] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 11:30:34,146] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.14.185 - - [13/May/2026 11:30:34] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 11:30:37,089] INFO in app: all_transactions breakdown: context_ms=4.4ms, render_ms=1.1ms
+[2026-05-13 11:30:37,090] INFO in app: GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=TRUNG+K%C3%8DNH&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 6.0ms
+42.114.14.185 - - [13/May/2026 11:30:37] "GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=TRUNG+KÍNH&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 11:30:37,165] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 11:30:37] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:37:05,075] INFO in app: index breakdown: context_ms=3.6ms, render_ms=2.6ms
+[2026-05-13 12:37:05,076] INFO in app: GET / -> 200 in 7.9ms
+185.242.226.33 - - [13/May/2026 12:37:05] "GET / HTTP/1.1" 200 -
+[2026-05-13 12:37:43,833] INFO in app: GET /static/finance-icon-180.png -> 200 in 2.5ms
+185.242.226.33 - - [13/May/2026 12:37:43] "GET /static/finance-icon-180.png HTTP/1.1" 200 -
+[2026-05-13 12:41:08,025] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.8ms
+42.114.14.185 - - [13/May/2026 12:41:08] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 12:41:25,274] INFO in app: add_summary_entry breakdown: write_ms=8.1ms, redirect_ms=0.6ms
+[2026-05-13 12:41:25,275] INFO in app: POST /add_summary_entry -> 302 in 9.0ms
+42.114.14.185 - - [13/May/2026 12:41:25] "[32mPOST /add_summary_entry HTTP/1.1[0m" 302 -
+[2026-05-13 12:41:25,358] INFO in app: summary breakdown: context_ms=3.5ms, render_ms=3.5ms
+[2026-05-13 12:41:25,359] INFO in app: GET /summary?date=2026-05-13 -> 200 in 7.8ms
+42.114.14.185 - - [13/May/2026 12:41:25] "GET /summary?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 12:41:25,474] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 12:41:25] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 12:41:25,516] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+42.114.14.185 - - [13/May/2026 12:41:25] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:42:01,796] INFO in app: add_summary_entry breakdown: write_ms=8.1ms, redirect_ms=0.7ms
+[2026-05-13 12:42:01,796] INFO in app: POST /add_summary_entry -> 302 in 9.4ms
+42.114.14.185 - - [13/May/2026 12:42:01] "[32mPOST /add_summary_entry HTTP/1.1[0m" 302 -
+[2026-05-13 12:42:01,888] INFO in app: summary breakdown: context_ms=2.8ms, render_ms=1.7ms
+[2026-05-13 12:42:01,888] INFO in app: GET /summary?date=2026-05-13 -> 200 in 4.9ms
+42.114.14.185 - - [13/May/2026 12:42:01] "GET /summary?date=2026-05-13 HTTP/1.1" 200 -
+[2026-05-13 12:42:01,994] INFO in app: GET /manifest.webmanifest?start_url=/summary -> 200 in 0.5ms
+42.114.14.185 - - [13/May/2026 12:42:01] "GET /manifest.webmanifest?start_url=/summary HTTP/1.1" 200 -
+[2026-05-13 12:42:02,027] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+42.114.14.185 - - [13/May/2026 12:42:02] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:42:16,379] INFO in app: index breakdown: context_ms=2.8ms, render_ms=1.1ms
+[2026-05-13 12:42:16,379] INFO in app: GET / -> 200 in 4.4ms
+42.114.14.185 - - [13/May/2026 12:42:16] "GET / HTTP/1.1" 200 -
+[2026-05-13 12:42:16,446] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 12:42:16] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 12:42:16,499] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 12:42:16] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:42:18,883] INFO in app: retail_customers breakdown: context_ms=6.7ms, render_ms=50.3ms
+[2026-05-13 12:42:18,886] INFO in app: GET /retail_customers -> 200 in 59.8ms
+42.114.14.185 - - [13/May/2026 12:42:18] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 12:42:18,940] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 12:42:18] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 12:42:19,341] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+42.114.14.185 - - [13/May/2026 12:42:19] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:42:27,995] INFO in app: retail_customers breakdown: context_ms=2.6ms, render_ms=1.1ms
+[2026-05-13 12:42:27,995] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=T%C3%BA -> 200 in 4.2ms
+42.114.14.185 - - [13/May/2026 12:42:27] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Tú HTTP/1.1" 200 -
+[2026-05-13 12:42:28,100] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 12:42:28] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 12:42:28,138] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+42.114.14.185 - - [13/May/2026 12:42:28] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:42:58,325] INFO in app: delete_retail_customer breakdown: write_ms=10.3ms, redirect_ms=0.5ms
+[2026-05-13 12:42:58,326] INFO in app: GET /delete_retail_customer/30 -> 302 in 11.9ms
+42.114.14.185 - - [13/May/2026 12:42:58] "[32mGET /delete_retail_customer/30 HTTP/1.1[0m" 302 -
+[2026-05-13 12:42:58,393] INFO in app: retail_customers breakdown: context_ms=3.0ms, render_ms=1.9ms
+[2026-05-13 12:42:58,393] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=T%C3%BA -> 200 in 5.2ms
+42.114.14.185 - - [13/May/2026 12:42:58] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Tú HTTP/1.1" 200 -
+[2026-05-13 12:42:58,471] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.5ms
+42.114.14.185 - - [13/May/2026 12:42:58] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 12:42:58,495] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.6ms
+42.114.14.185 - - [13/May/2026 12:42:58] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:43:47,341] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.9ms
+113.185.47.25 - - [13/May/2026 12:43:47] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 12:43:48,829] INFO in app: GET /favicon.ico -> 404 in 0.8ms
+113.185.47.25 - - [13/May/2026 12:43:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 12:43:50,110] INFO in app: update_retail_customer breakdown: write_ms=6.7ms, redirect_ms=0.2ms
+[2026-05-13 12:43:50,111] INFO in app: POST /update_retail_customer -> 302 in 7.4ms
+42.114.14.185 - - [13/May/2026 12:43:50] "[32mPOST /update_retail_customer HTTP/1.1[0m" 302 -
+[2026-05-13 12:43:50,232] INFO in app: retail_customers breakdown: context_ms=2.9ms, render_ms=1.9ms
+[2026-05-13 12:43:50,233] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=T%C3%BA -> 200 in 5.2ms
+42.114.14.185 - - [13/May/2026 12:43:50] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Tú HTTP/1.1" 200 -
+[2026-05-13 12:43:50,357] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 12:43:50] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 12:43:50,386] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.14.185 - - [13/May/2026 12:43:50] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:43:56,898] INFO in app: index breakdown: context_ms=3.6ms, render_ms=2.5ms
+[2026-05-13 12:43:56,900] INFO in app: GET / -> 200 in 7.8ms
+42.114.14.185 - - [13/May/2026 12:43:56] "GET / HTTP/1.1" 200 -
+[2026-05-13 12:43:56,939] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+42.114.14.185 - - [13/May/2026 12:43:56] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 12:43:56,975] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.5ms
+42.114.14.185 - - [13/May/2026 12:43:56] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:44:00,276] INFO in app: retail_customers breakdown: context_ms=5.7ms, render_ms=13.8ms
+[2026-05-13 12:44:00,279] INFO in app: GET /retail_customers -> 200 in 22.7ms
+42.114.14.185 - - [13/May/2026 12:44:00] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 12:44:00,329] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.4ms
+42.114.14.185 - - [13/May/2026 12:44:00] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 12:44:00,688] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+42.114.14.185 - - [13/May/2026 12:44:00] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 12:59:17,242] INFO in app: settings breakdown: context_ms=3.7ms, render_ms=20.9ms
+[2026-05-13 12:59:17,243] INFO in app: GET /settings -> 200 in 26.0ms
+40.77.167.13 - - [13/May/2026 12:59:17] "GET /settings HTTP/1.1" 200 -
+[2026-05-13 13:10:43,062] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 1.6ms
+14.191.166.154 - - [13/May/2026 13:10:43] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:10:47,513] INFO in app: all_transactions breakdown: context_ms=5.8ms, render_ms=3.0ms
+[2026-05-13 13:10:47,513] INFO in app: GET /all_transactions -> 200 in 9.4ms
+14.191.166.154 - - [13/May/2026 13:10:47] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 13:10:47,561] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:10:47] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 13:10:47,752] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.9ms
+14.191.166.154 - - [13/May/2026 13:10:47] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:10:54,055] INFO in app: all_transactions breakdown: context_ms=5.5ms, render_ms=2.0ms
+[2026-05-13 13:10:54,056] INFO in app: GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=TRUNG+K%C3%8DNH&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 8.0ms
+14.191.166.154 - - [13/May/2026 13:10:54] "GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=TRUNG+KÍNH&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 13:10:54,144] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.4ms
+14.191.166.154 - - [13/May/2026 13:10:54] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 13:10:54,173] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.2ms
+14.191.166.154 - - [13/May/2026 13:10:54] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:11:01,491] INFO in app: all_transactions breakdown: context_ms=6.3ms, render_ms=1.2ms
+[2026-05-13 13:11:01,491] INFO in app: GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=SAMSUNG+C+H%E1%BA%B0NG&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 8.0ms
+14.191.166.154 - - [13/May/2026 13:11:01] "GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=SAMSUNG+C+HẰNG&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 13:11:01,577] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.2ms
+14.191.166.154 - - [13/May/2026 13:11:01] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 13:11:01,589] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+14.191.166.154 - - [13/May/2026 13:11:01] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:21:04,368] INFO in app: index breakdown: context_ms=5.2ms, render_ms=3.2ms
+[2026-05-13 13:21:04,369] INFO in app: GET / -> 200 in 10.0ms
+14.191.166.154 - - [13/May/2026 13:21:04] "GET / HTTP/1.1" 200 -
+[2026-05-13 13:21:04,661] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.9ms
+14.191.166.154 - - [13/May/2026 13:21:04] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:21:04,831] INFO in app: GET /favicon.ico -> 404 in 0.6ms
+14.191.166.154 - - [13/May/2026 13:21:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-05-13 13:21:08,894] INFO in app: report_cty breakdown: context_ms=4.4ms, render_ms=1.4ms
+[2026-05-13 13:21:08,895] INFO in app: GET /report_cty -> 200 in 6.3ms
+14.191.166.154 - - [13/May/2026 13:21:08] "GET /report_cty HTTP/1.1" 200 -
+[2026-05-13 13:21:08,965] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+14.191.166.154 - - [13/May/2026 13:21:08] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:21:27,004] INFO in app: report_cty breakdown: context_ms=4.9ms, render_ms=0.9ms
+[2026-05-13 13:21:27,004] INFO in app: GET /report_cty?from_date=2026-05-13&to_date=2026-05-13&cong_ty=TRUNG+K%C3%8DNH&may_pos=AB+Dung -> 200 in 6.4ms
+14.191.166.154 - - [13/May/2026 13:21:27] "GET /report_cty?from_date=2026-05-13&to_date=2026-05-13&cong_ty=TRUNG+KÍNH&may_pos=AB+Dung HTTP/1.1" 200 -
+[2026-05-13 13:21:27,054] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+14.191.166.154 - - [13/May/2026 13:21:27] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:21:33,011] INFO in app: index breakdown: context_ms=2.6ms, render_ms=1.2ms
+[2026-05-13 13:21:33,012] INFO in app: GET / -> 200 in 4.2ms
+14.191.166.154 - - [13/May/2026 13:21:33] "GET / HTTP/1.1" 200 -
+[2026-05-13 13:21:33,059] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+14.191.166.154 - - [13/May/2026 13:21:33] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:21:34,458] INFO in app: all_transactions breakdown: context_ms=3.6ms, render_ms=1.2ms
+[2026-05-13 13:21:34,459] INFO in app: GET /all_transactions -> 200 in 5.2ms
+14.191.166.154 - - [13/May/2026 13:21:34] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 13:21:34,537] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+14.191.166.154 - - [13/May/2026 13:21:34] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:21:39,005] INFO in app: all_transactions breakdown: context_ms=4.7ms, render_ms=1.3ms
+[2026-05-13 13:21:39,005] INFO in app: GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=TRUNG+K%C3%8DNH&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 6.4ms
+14.191.166.154 - - [13/May/2026 13:21:39] "GET /all_transactions?from_date=2026-05-13&to_date=2026-05-13&cong_ty=TRUNG+KÍNH&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 13:21:39,081] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+14.191.166.154 - - [13/May/2026 13:21:39] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:24:19,914] INFO in app: all_transactions breakdown: context_ms=9.9ms, render_ms=4.4ms
+[2026-05-13 13:24:19,915] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-12&cong_ty=TRUNG+K%C3%8DNH&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 16.1ms
+14.191.166.154 - - [13/May/2026 13:24:19] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-12&cong_ty=TRUNG+KÍNH&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 13:24:20,017] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.1ms
+14.191.166.154 - - [13/May/2026 13:24:20] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:25:11,427] INFO in app: all_transactions breakdown: context_ms=6.7ms, render_ms=4.2ms
+[2026-05-13 13:25:11,428] INFO in app: GET /all_transactions?from_date=2026-05-12&to_date=2026-05-12&cong_ty=T%E1%BA%A5t+c%E1%BA%A3&may_pos=T%E1%BA%A5t+c%E1%BA%A3 -> 200 in 12.2ms
+14.191.166.154 - - [13/May/2026 13:25:11] "GET /all_transactions?from_date=2026-05-12&to_date=2026-05-12&cong_ty=Tất+cả&may_pos=Tất+cả HTTP/1.1" 200 -
+[2026-05-13 13:25:11,523] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+14.191.166.154 - - [13/May/2026 13:25:11] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:28:22,158] INFO in app: index breakdown: context_ms=3.4ms, render_ms=2.1ms
+[2026-05-13 13:28:22,159] INFO in app: GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -> 200 in 6.5ms
+14.191.166.154 - - [13/May/2026 13:28:22] "GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo HTTP/1.1" 200 -
+[2026-05-13 13:28:22,200] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.5ms
+14.191.166.154 - - [13/May/2026 13:28:22] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:28:22,695] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+14.191.166.154 - - [13/May/2026 13:28:22] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 13:28:22,727] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.9ms
+14.191.166.154 - - [13/May/2026 13:28:22] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:28:36,863] INFO in app: index breakdown: context_ms=2.5ms, render_ms=1.1ms
+[2026-05-13 13:28:36,863] INFO in app: GET / -> 200 in 4.3ms
+14.191.166.154 - - [13/May/2026 13:28:36] "GET / HTTP/1.1" 200 -
+[2026-05-13 13:28:37,000] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+14.191.166.154 - - [13/May/2026 13:28:37] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:28:37,193] INFO in app: GET /static/finance-icon-180.png -> 304 in 0.9ms
+14.191.166.154 - - [13/May/2026 13:28:37] "[36mGET /static/finance-icon-180.png HTTP/1.1[0m" 304 -
+[2026-05-13 13:28:40,536] INFO in app: index breakdown: context_ms=4.6ms, render_ms=4.9ms
+[2026-05-13 13:28:40,537] INFO in app: GET / -> 200 in 10.5ms
+14.191.166.154 - - [13/May/2026 13:28:40] "GET / HTTP/1.1" 200 -
+[2026-05-13 13:28:40,598] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+14.191.166.154 - - [13/May/2026 13:28:40] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:28:59,594] INFO in app: index breakdown: context_ms=3.7ms, render_ms=1.4ms
+[2026-05-13 13:28:59,595] INFO in app: GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -> 200 in 5.8ms
+14.191.166.154 - - [13/May/2026 13:28:59] "GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo HTTP/1.1" 200 -
+[2026-05-13 13:28:59,631] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+14.191.166.154 - - [13/May/2026 13:28:59] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 13:28:59,675] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+14.191.166.154 - - [13/May/2026 13:28:59] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:32:28,824] INFO in app: index breakdown: context_ms=3.2ms, render_ms=2.0ms
+[2026-05-13 13:32:28,825] INFO in app: GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo -> 200 in 6.4ms
+14.191.166.154 - - [13/May/2026 13:32:28] "GET /?zarsrc=30&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo HTTP/1.1" 200 -
+[2026-05-13 13:32:28,860] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:32:28] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 13:32:28,935] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.1ms
+14.191.166.154 - - [13/May/2026 13:32:28] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:32:29,192] INFO in app: GET /apple-touch-icon-120x120-precomposed.png -> 404 in 0.5ms
+14.191.166.154 - - [13/May/2026 13:32:29] "[33mGET /apple-touch-icon-120x120-precomposed.png HTTP/1.1[0m" 404 -
+[2026-05-13 13:32:29,396] INFO in app: GET /apple-touch-icon-120x120.png -> 404 in 0.4ms
+14.191.166.154 - - [13/May/2026 13:32:29] "[33mGET /apple-touch-icon-120x120.png HTTP/1.1[0m" 404 -
+[2026-05-13 13:32:29,518] INFO in app: GET /static/finance-icon-180.png -> 200 in 0.9ms
+14.191.166.154 - - [13/May/2026 13:32:29] "GET /static/finance-icon-180.png HTTP/1.1" 200 -
+[2026-05-13 13:32:31,360] INFO in app: company_transfers breakdown: context_ms=5.1ms, render_ms=1.1ms
+[2026-05-13 13:32:31,360] INFO in app: GET /company_transfers -> 200 in 6.8ms
+14.191.166.154 - - [13/May/2026 13:32:31] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 13:32:31,832] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.5ms
+14.191.166.154 - - [13/May/2026 13:32:31] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 13:32:31,920] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+14.191.166.154 - - [13/May/2026 13:32:31] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:32:50,242] INFO in app: add_company_transfer breakdown: write_ms=8.7ms, redirect_ms=0.5ms
+[2026-05-13 13:32:50,243] INFO in app: POST /add_company_transfer -> 302 in 9.8ms
+14.191.166.154 - - [13/May/2026 13:32:50] "[32mPOST /add_company_transfer HTTP/1.1[0m" 302 -
+[2026-05-13 13:32:50,314] INFO in app: company_transfers breakdown: context_ms=2.7ms, render_ms=0.9ms
+[2026-05-13 13:32:50,314] INFO in app: GET /company_transfers -> 200 in 3.9ms
+14.191.166.154 - - [13/May/2026 13:32:50] "GET /company_transfers HTTP/1.1" 200 -
+[2026-05-13 13:32:50,385] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:32:50] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 13:32:50,414] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+14.191.166.154 - - [13/May/2026 13:32:50] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:55:26,964] INFO in app: GET /manifest.webmanifest?start_url=/company_transfers -> 200 in 0.9ms
+14.191.166.154 - - [13/May/2026 13:55:26] "GET /manifest.webmanifest?start_url=/company_transfers HTTP/1.1" 200 -
+[2026-05-13 13:55:29,630] INFO in app: index breakdown: context_ms=3.1ms, render_ms=2.5ms
+[2026-05-13 13:55:29,630] INFO in app: GET / -> 200 in 6.1ms
+14.191.166.154 - - [13/May/2026 13:55:29] "GET / HTTP/1.1" 200 -
+[2026-05-13 13:55:29,680] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:55:29] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 13:55:29,715] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.5ms
+14.191.166.154 - - [13/May/2026 13:55:29] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:55:31,882] INFO in app: retail_customers breakdown: context_ms=4.2ms, render_ms=11.0ms
+[2026-05-13 13:55:31,884] INFO in app: GET /retail_customers -> 200 in 17.2ms
+14.191.166.154 - - [13/May/2026 13:55:31] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:55:31,958] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:55:31] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:55:32,127] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+14.191.166.154 - - [13/May/2026 13:55:32] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:55:42,242] INFO in app: retail_customers breakdown: context_ms=3.2ms, render_ms=1.6ms
+[2026-05-13 13:55:42,243] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=Misa -> 200 in 5.4ms
+14.191.166.154 - - [13/May/2026 13:55:42] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Misa HTTP/1.1" 200 -
+[2026-05-13 13:55:42,702] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:55:42] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:55:42,735] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+14.191.166.154 - - [13/May/2026 13:55:42] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:55:48,811] INFO in app: delete_retail_customer breakdown: write_ms=5.4ms, redirect_ms=0.2ms
+[2026-05-13 13:55:48,812] INFO in app: GET /delete_retail_customer/115 -> 302 in 6.0ms
+14.191.166.154 - - [13/May/2026 13:55:48] "[32mGET /delete_retail_customer/115 HTTP/1.1[0m" 302 -
+[2026-05-13 13:55:48,866] INFO in app: retail_customers breakdown: context_ms=2.3ms, render_ms=0.7ms
+[2026-05-13 13:55:48,867] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=Misa -> 200 in 3.3ms
+14.191.166.154 - - [13/May/2026 13:55:48] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Misa HTTP/1.1" 200 -
+[2026-05-13 13:55:48,951] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:55:48] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:55:48,968] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+14.191.166.154 - - [13/May/2026 13:55:48] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:55:54,823] INFO in app: index breakdown: context_ms=4.6ms, render_ms=1.8ms
+[2026-05-13 13:55:54,824] INFO in app: GET / -> 200 in 7.2ms
+14.191.166.154 - - [13/May/2026 13:55:54] "GET / HTTP/1.1" 200 -
+[2026-05-13 13:55:54,864] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:55:54] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 13:55:54,899] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+14.191.166.154 - - [13/May/2026 13:55:54] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:55:57,218] INFO in app: retail_customers breakdown: context_ms=3.6ms, render_ms=9.4ms
+[2026-05-13 13:55:57,220] INFO in app: GET /retail_customers -> 200 in 14.8ms
+14.191.166.154 - - [13/May/2026 13:55:57] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:55:57,261] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:55:57] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:55:57,548] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+14.191.166.154 - - [13/May/2026 13:55:57] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:56:12,698] INFO in app: retail_customers breakdown: context_ms=2.7ms, render_ms=1.0ms
+[2026-05-13 13:56:12,699] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=V%E1%BB%A3+th%C3%A1i -> 200 in 4.2ms
+14.191.166.154 - - [13/May/2026 13:56:12] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Vợ+thái HTTP/1.1" 200 -
+[2026-05-13 13:56:12,778] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:56:12] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:56:12,795] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.0ms
+14.191.166.154 - - [13/May/2026 13:56:12] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:56:19,080] INFO in app: delete_retail_customer breakdown: write_ms=5.1ms, redirect_ms=0.3ms
+[2026-05-13 13:56:19,080] INFO in app: GET /delete_retail_customer/141 -> 302 in 5.9ms
+14.191.166.154 - - [13/May/2026 13:56:19] "[32mGET /delete_retail_customer/141 HTTP/1.1[0m" 302 -
+[2026-05-13 13:56:19,137] INFO in app: retail_customers breakdown: context_ms=2.6ms, render_ms=1.1ms
+[2026-05-13 13:56:19,137] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=V%E1%BB%A3+th%C3%A1i -> 200 in 4.2ms
+14.191.166.154 - - [13/May/2026 13:56:19] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Vợ+thái HTTP/1.1" 200 -
+[2026-05-13 13:56:19,218] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:56:19] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:56:19,257] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+14.191.166.154 - - [13/May/2026 13:56:19] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:56:33,677] INFO in app: retail_customers breakdown: context_ms=2.8ms, render_ms=1.5ms
+[2026-05-13 13:56:33,678] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=Th%C3%A1i+ -> 200 in 4.9ms
+14.191.166.154 - - [13/May/2026 13:56:33] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Thái+ HTTP/1.1" 200 -
+[2026-05-13 13:56:34,165] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:56:34] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:56:34,193] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.7ms
+14.191.166.154 - - [13/May/2026 13:56:34] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:56:45,069] INFO in app: delete_retail_customer breakdown: write_ms=6.4ms, redirect_ms=0.3ms
+[2026-05-13 13:56:45,070] INFO in app: GET /delete_retail_customer/119 -> 302 in 7.4ms
+14.191.166.154 - - [13/May/2026 13:56:45] "[32mGET /delete_retail_customer/119 HTTP/1.1[0m" 302 -
+[2026-05-13 13:56:45,120] INFO in app: retail_customers breakdown: context_ms=2.3ms, render_ms=1.2ms
+[2026-05-13 13:56:45,120] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=Th%C3%A1i+ -> 200 in 3.9ms
+14.191.166.154 - - [13/May/2026 13:56:45] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Thái+ HTTP/1.1" 200 -
+[2026-05-13 13:56:45,198] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:56:45] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:56:45,253] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+14.191.166.154 - - [13/May/2026 13:56:45] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:57:09,838] INFO in app: update_retail_customer breakdown: write_ms=6.1ms, redirect_ms=0.2ms
+[2026-05-13 13:57:09,838] INFO in app: POST /update_retail_customer -> 302 in 6.9ms
+14.191.166.154 - - [13/May/2026 13:57:09] "[32mPOST /update_retail_customer HTTP/1.1[0m" 302 -
+[2026-05-13 13:57:09,919] INFO in app: retail_customers breakdown: context_ms=2.5ms, render_ms=1.6ms
+[2026-05-13 13:57:09,920] INFO in app: GET /retail_customers?from_due_date=&to_due_date=&status=T%E1%BA%A5t+c%E1%BA%A3&customer=Th%C3%A1i+ -> 200 in 4.5ms
+14.191.166.154 - - [13/May/2026 13:57:09] "GET /retail_customers?from_due_date=&to_due_date=&status=Tất+cả&customer=Thái+ HTTP/1.1" 200 -
+[2026-05-13 13:57:10,000] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:57:10] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:57:10,045] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.1ms
+14.191.166.154 - - [13/May/2026 13:57:10] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:57:12,452] INFO in app: index breakdown: context_ms=3.2ms, render_ms=1.1ms
+[2026-05-13 13:57:12,453] INFO in app: GET / -> 200 in 4.7ms
+14.191.166.154 - - [13/May/2026 13:57:12] "GET / HTTP/1.1" 200 -
+[2026-05-13 13:57:12,492] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.2ms
+14.191.166.154 - - [13/May/2026 13:57:12] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 13:57:12,529] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.6ms
+14.191.166.154 - - [13/May/2026 13:57:12] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 13:57:16,875] INFO in app: retail_customers breakdown: context_ms=3.7ms, render_ms=9.9ms
+[2026-05-13 13:57:16,877] INFO in app: GET /retail_customers -> 200 in 15.3ms
+14.191.166.154 - - [13/May/2026 13:57:16] "GET /retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:57:16,914] INFO in app: GET /manifest.webmanifest?start_url=/retail_customers -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 13:57:16] "GET /manifest.webmanifest?start_url=/retail_customers HTTP/1.1" 200 -
+[2026-05-13 13:57:17,093] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.4ms
+14.191.166.154 - - [13/May/2026 13:57:17] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 14:00:04,472] INFO in app: all_transactions breakdown: context_ms=9.7ms, render_ms=4.4ms
+[2026-05-13 14:00:04,474] INFO in app: GET /all_transactions -> 200 in 15.8ms
+14.191.166.154 - - [13/May/2026 14:00:04] "GET /all_transactions HTTP/1.1" 200 -
+[2026-05-13 14:00:05,015] INFO in app: GET /manifest.webmanifest?start_url=/all_transactions -> 200 in 0.3ms
+14.191.166.154 - - [13/May/2026 14:00:05] "GET /manifest.webmanifest?start_url=/all_transactions HTTP/1.1" 200 -
+[2026-05-13 14:00:05,054] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 1.3ms
+14.191.166.154 - - [13/May/2026 14:00:05] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 14:03:25,138] INFO in app: report_cty breakdown: context_ms=6.3ms, render_ms=2.9ms
+[2026-05-13 14:03:25,140] INFO in app: GET /report_cty -> 200 in 10.8ms
+14.191.166.154 - - [13/May/2026 14:03:25] "GET /report_cty HTTP/1.1" 200 -
+[2026-05-13 14:03:25,631] INFO in app: GET /manifest.webmanifest?start_url=/report_cty -> 200 in 0.4ms
+14.191.166.154 - - [13/May/2026 14:03:25] "GET /manifest.webmanifest?start_url=/report_cty HTTP/1.1" 200 -
+[2026-05-13 14:03:25,670] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 2.1ms
+14.191.166.154 - - [13/May/2026 14:03:25] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -
+[2026-05-13 14:03:28,168] INFO in app: index breakdown: context_ms=2.7ms, render_ms=1.2ms
+[2026-05-13 14:03:28,168] INFO in app: GET / -> 200 in 4.2ms
+14.191.166.154 - - [13/May/2026 14:03:28] "GET / HTTP/1.1" 200 -
+[2026-05-13 14:03:28,204] INFO in app: GET /manifest.webmanifest?start_url=/ -> 200 in 0.4ms
+14.191.166.154 - - [13/May/2026 14:03:28] "GET /manifest.webmanifest?start_url=/ HTTP/1.1" 200 -
+[2026-05-13 14:03:28,246] INFO in app: GET /static/money-input.js?v=20260511 -> 304 in 0.8ms
+14.191.166.154 - - [13/May/2026 14:03:28] "[36mGET /static/money-input.js?v=20260511 HTTP/1.1[0m" 304 -

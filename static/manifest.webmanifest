@@ -1,0 +1,18 @@
+{
+  "name": "Quan Ly Ngan Hang",
+  "short_name": "QuanLyNH",
+  "description": "Quan ly giao dich POS tren iPhone",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#eef4ff",
+  "theme_color": "#0d6efd",
+  "icons": [
+    {
+      "src": "/static/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

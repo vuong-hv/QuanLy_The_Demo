@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nhập POS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.bootstrap5.css" rel="stylesheet">
+    <style>
+        body { background-color: #f0f2f5; }
+        .card { border-radius: 15px; border: none; }
+        .input-money { font-weight: bold; color: #198754; font-size: 1.3rem !important; }
+        .input-red { font-weight: bold; color: #dc3545; font-size: 1.3rem !important; background-color: #fff5f5 !important; }
+    </style>
+</head>
+<body class="container-fluid py-3">
+    <div class="d-flex justify-content-between mb-3">
+        <a href="/settings" class="btn btn-dark btn-sm shadow-sm">⚙️ Cài đặt</a>
+        <a href="/all_transactions" class="btn btn-outline-primary btn-sm shadow-sm">📜 Chi tiết</a>
+    </div>
+    <div class="card shadow-sm p-3">
+        <h5 class="text-center text-primary fw-bold mb-3">NHẬP CHI TIẾT GIAO DỊCH</h5>
+        <form action="/submit" method="post">
+            <div class="mb-2"><label class="small fw-bold">Ngày</label><input type="date" name="chi_tiet_ngay" id="today" class="form-control" required></div>
+            <div class="mb-2"><label class="small fw-bold">Chủ POS</label><select name="ten_chu_pos" id="sel-owner" required><option value="">Chọn Chủ...</option>{% for ten in chu_pos_list %}<option value="{{ten}}">{{ten}}</option>{% endfor %}</select></div>
+            <div class="mb-2"><label class="small fw-bold">Máy POS (Công ty - Máy)</label><select name="may_pos" id="sel-pos" required><option value="">Chọn Máy...</option>{% for m in may_pos_data %}<option value="{{m['Máy POS']}}" data-fee="{{m['Phí Mặc Định']}}">{{m['Tên Công ty']}} - {{m['Máy POS']}}</option>{% endfor %}</select></div>
+            <div class="row g-2">
+                <div class="col-6 mb-2"><label class="small fw-bold">Lô</label><input type="text" name="so_lo" class="form-control" required></div>
+                <div class="col-6 mb-2"><label class="small fw-bold">Phí %</label><input type="number" step="0.01" name="bieu_phi" id="fee" class="form-control" value="1.1" oninput="autoCalc()"></div>
+            </div>
+            <div class="mb-2"><label class="small fw-bold">Số tiền</label><input type="text" name="doanh_thu" id="amt" class="form-control input-money" oninput="formatAndCalc(this)" placeholder="0" required inputmode="numeric"></div>
+            <div class="mb-2"><label class="small fw-bold text-danger">Sau phí</label><input type="text" name="ck_khach" id="after" class="form-control input-red" oninput="formatCur(this)" placeholder="0" inputmode="numeric"></div>
+            <div class="mb-3"><label class="small fw-bold text-primary">Thực chuyển khách</label><input type="text" name="thuc_chuyen" class="form-control input-money text-primary" oninput="formatCur(this)" placeholder="0" inputmode="numeric"></div>
+            <button type="submit" class="btn btn-success w-100 py-3 fw-bold shadow">LƯU GIAO DỊCH</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+    <script>
+        document.getElementById('today').valueAsDate = new Date();
+        function formatCur(i) { let v = i.value.replace(/\D/g, ""); if (v !== "") i.value = Number(v).toLocaleString('en-US'); }
+        function formatAndCalc(i) { formatCur(i); autoCalc(); }
+        function autoCalc() {
+            let a = parseFloat(document.getElementById('amt').value.replace(/,/g,'')) || 0;
+            let f = parseFloat(document.getElementById('fee').value) || 0;
+            if(a>0) document.getElementById('after').value = Math.round(a - (a * f/100)).toLocaleString('en-US');
+        }
+        new TomSelect("#sel-owner", { create: false });
+        new TomSelect("#sel-pos", { create: false, onChange: function(v) { let f = this.options[v].fee; if(f) { document.getElementById('fee').value = f; autoCalc(); } } });
+    </script>
+</body>
+</html>

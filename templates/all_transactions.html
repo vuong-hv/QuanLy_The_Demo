@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chi tiết giao dịch</title>
+    <meta name="theme-color" content="#212529">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="QuanLyNH">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="manifest" href="{{ pwa_manifest_url }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='finance-icon-180.png') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { background: #f4f6f9; font-size: clamp(12px, 1vw, 14px); }
+        .page-shell { width: min(100%, 1240px); margin: 0 auto; }
+        .header-bar { gap: 10px; }
+        .top-actions { flex-shrink: 0; }
+        .filter-card, .summary-card, .report-card { background: #fff; border-radius: 14px; border: 1px solid #e9ecef; }
+        .summary-tile { border-radius: 12px; padding: 10px 12px; height: 100%; border: 1px solid #e9ecef; background: #fff; }
+        .summary-label { font-size: 10px; text-transform: uppercase; color: #6c757d; letter-spacing: 0.04em; }
+        .summary-value { font-size: 18px; font-weight: 800; line-height: 1.2; }
+        .money { text-align: right; font-weight: 800; white-space: nowrap; }
+        .table-wrap {
+            border-radius: 14px;
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: visible;
+            -webkit-overflow-scrolling: touch;
+            touch-action: pan-x pan-y;
+        }
+        .transactions-table { min-width: 1060px; }
+        .table thead th { background: #212529; color: #fff; position: sticky; top: 0; z-index: 10; white-space: nowrap; vertical-align: middle; }
+        .table td, .table th { vertical-align: middle; white-space: nowrap; }
+        .table-total-row td { background: #f1f3f5; font-weight: 900; border-top: 2px solid #212529; }
+        .btn-action { padding: 0.2rem 0.45rem; font-size: 11px; font-weight: 800; }
+        .row-editing { background: #fff8e1; }
+        .inline-input, .inline-select { min-width: 92px; font-size: 11px; padding: 2px 4px; }
+        .w-date { min-width: 128px; }
+        .w-money { min-width: 110px; }
+        .w-note { min-width: 150px; }
+        .mobile-scroll-hint { display: none; }
+        @media (max-width: 767.98px) {
+            body { padding: 8px !important; }
+            .mobile-stack > [class*="col-"] { flex: 0 0 auto; width: 100%; }
+            .header-bar { flex-direction: column; align-items: stretch !important; }
+            .top-actions { width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .top-actions .btn { width: 100%; }
+            .summary-value { font-size: 16px; }
+            .mobile-scroll-hint {
+                display: block;
+                color: #6c757d;
+                font-size: 12px;
+                font-weight: 800;
+                margin: 0 0 0.35rem 0.15rem;
+            }
+            .table-responsive {
+                max-width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                touch-action: pan-x pan-y;
+            }
+            .table td, .table th { min-width: 92px; }
+            .transactions-table { min-width: 1120px; }
+            .transactions-table td:last-child, .transactions-table th:last-child { position: sticky; right: 0; background: #fff; box-shadow: -6px 0 10px rgba(0, 0, 0, 0.06); }
+            .transactions-table thead th:last-child { background: #212529; }
+            .transactions-table .table-total-row td:last-child { background: #f1f3f5; }
+        }
+    </style>
+</head>
+<body class="p-2">
+    <div class="page-shell">
+        <div class="d-flex justify-content-between align-items-center mb-2 header-bar">
+            <h6 class="fw-bold m-0 text-uppercase">📜 Chi tiết giao dịch</h6>
+            <div class="btn-group top-actions">
+                <a href="/report_cty" class="btn btn-outline-primary btn-sm py-1">Báo cáo</a>
+                <a href="/" class="btn btn-primary btn-sm py-1">Quay lại</a>
+            </div>
+        </div>
+
+        <div class="filter-card p-2 p-md-3 mb-2 shadow-sm">
+            <form action="/all_transactions" method="get" class="row g-2 mobile-stack">
+                <div class="col-12 col-md-2">
+                    <label class="form-label small mb-1">Từ ngày</label>
+                    <input type="date" name="from_date" class="form-control form-control-sm" value="{{sel_from_date}}">
+                </div>
+                <div class="col-12 col-md-2">
+                    <label class="form-label small mb-1">Đến ngày</label>
+                    <input type="date" name="to_date" class="form-control form-control-sm" value="{{sel_to_date}}">
+                </div>
+                <div class="col-12 col-md-2">
+                    <label class="form-label small mb-1">Công ty</label>
+                    <select name="cong_ty" id="company-select" class="form-select form-select-sm">
+                        <option value="Tất cả">-- Công ty --</option>
+                        {% for c in list_cty %}<option value="{{c}}" {% if sel_cty == c %}selected{% endif %}>{{c}}</option>{% endfor %}
+                    </select>
+                </div>
+                <div class="col-12 col-md-2">
+                    <label class="form-label small mb-1">Máy POS</label>
+                    <select name="may_pos" id="may-select" class="form-select form-select-sm">
+                        <option value="Tất cả">-- Máy --</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-2 d-flex align-items-end"><button type="submit" class="btn btn-dark btn-sm w-100 py-2 fw-bold">LỌC</button></div>
+            </form>
+        </div>
+
+        <div class="summary-card p-2 p-md-3 mb-2 shadow-sm">
+            <div class="row g-2">
+                <div class="col-6 col-md">
+                    <div class="summary-tile">
+                        <div class="summary-label">Tổng giao dịch</div>
+                        <div class="summary-value">{{ summary.count }}</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <div class="summary-tile bg-primary-subtle border-primary-subtle">
+                        <div class="summary-label">Tổng tiền</div>
+                        <div class="summary-value text-primary">{{ "{:,.0f}".format(summary.total_amount) }}</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <div class="summary-tile bg-success-subtle border-success-subtle">
+                        <div class="summary-label">Số tiền giao dịch</div>
+                        <div class="summary-value text-success">{{ "{:,.0f}".format(summary.total_after_customer_fee) }}</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <div class="summary-tile bg-warning-subtle border-warning-subtle">
+                        <div class="summary-label">Tổng phí</div>
+                        <div class="summary-value text-warning">{{ "{:,.0f}".format(summary.total_customer_fee) }}</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <div class="summary-tile {% if summary.company_received_diff < 0 %}bg-danger-subtle border-danger-subtle{% else %}bg-light{% endif %}">
+                        <div class="summary-label">Số tiền còn lại</div>
+                        <div class="summary-value {% if summary.company_received_diff < 0 %}text-danger{% else %}text-success{% endif %}">{{ "{:,.0f}".format(summary.company_received_diff) }}</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <div class="summary-tile bg-info-subtle border-info-subtle">
+                        <div class="summary-label">Tiền bank về</div>
+                        <div class="summary-value text-info">{{ "{:,.0f}".format(summary.total_company_received) }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% if company_transfer_summary %}
+        <div class="report-card p-2 p-md-3 mb-2 shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="fw-bold m-0" style="font-size: 13px;">Công ty đã chuyển - TIỀN BANK VỀ</h6>
+                <span class="small text-muted">Theo bộ lọc hiện tại</span>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-sm align-middle mb-0">
+                    <thead>
+                        <tr>
+                            <th>Công ty</th>
+                            <th>Ngân hàng nhận</th>
+                            <th>Số lần</th>
+                            <th class="text-end">Tiền bank về</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for s in company_transfer_summary %}
+                        <tr>
+                            <td class="fw-bold">{{ s['Tên Công ty'] }}</td>
+                            <td>{{ s['Ngân hàng nhận'] }}</td>
+                            <td class="text-center fw-bold">{{ s['Số lần'] }}</td>
+                            <td class="money text-info">{{ "{:,.0f}".format(s['Tiền bank về']) }}</td>
+                        </tr>
+                        {% endfor %}
+                        <tr class="table-light fw-bold">
+                            <td colspan="3" class="text-center">TỔNG CỘNG</td>
+                            <td class="money text-info">{{ "{:,.0f}".format(summary.total_company_received) }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="mobile-scroll-hint">Kéo ngang bảng để xem đủ cột.</div>
+        <div class="table-responsive table-wrap bg-white shadow-sm">
+            <table class="table table-bordered table-hover table-sm mb-0 transactions-table">
+                <thead>
+                    <tr>
+                        <th>Ngày</th>
+                        {% if show_owner_column %}
+                        <th>Chủ POS</th>
+                        {% endif %}
+                        <th>Công ty</th>
+                        <th>Máy</th>
+                        <th>Lô</th>
+                        <th>Số tiền</th>
+                        <th>Số tiền giao dịch</th>
+                        <th>Phí %</th>
+                        <th>Phí</th>
+                        <th>Ghi chú</th>
+                        <th>HĐ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in transactions %}
+                    {% if edit_idx == row['id'] %}
+                    <tr class="row-editing">
+                        <form action="/update_transaction_inline" method="post" class="inline-edit-form">
+                            <input type="hidden" name="index" value="{{ row['id'] }}">
+                            <input type="hidden" name="ret_from_date" value="{{ sel_from_date }}">
+                            <input type="hidden" name="ret_to_date" value="{{ sel_to_date }}">
+                            <input type="hidden" name="ret_cty" value="{{ sel_cty }}">
+                            <input type="hidden" name="ret_may" value="{{ sel_may }}">
+                            <td><input type="date" name="chi_tiet_ngay" class="form-control form-control-sm inline-input w-date" value="{{ row['Chi tiết ngày tháng'] }}" required></td>
+                            {% if show_owner_column %}
+                            <td>
+                                <select name="ten_chu_pos" class="form-select form-select-sm inline-select">
+                                    {% for c in list_chu %}<option value="{{ c }}" {% if row['Tên Chủ POS'] == c %}selected{% endif %}>{{ c }}</option>{% endfor %}
+                                    {% if row['Tên Chủ POS'] not in list_chu %}<option value="{{ row['Tên Chủ POS'] }}" selected>{{ row['Tên Chủ POS'] }}</option>{% endif %}
+                                </select>
+                            </td>
+                            {% else %}
+                            <input type="hidden" name="ten_chu_pos" value="{{ row['Tên Chủ POS'] }}">
+                            {% endif %}
+                            <td>
+                                <select name="ten_cong_ty" class="form-select form-select-sm inline-select">
+                                    {% for c in list_cty %}<option value="{{ c }}" {% if row['Tên Công ty'] == c %}selected{% endif %}>{{ c }}</option>{% endfor %}
+                                    {% if row['Tên Công ty'] not in list_cty %}<option value="{{ row['Tên Công ty'] }}" selected>{{ row['Tên Công ty'] }}</option>{% endif %}
+                                </select>
+                            </td>
+                            <td>
+                                <select name="may_pos" class="form-select form-select-sm inline-select">
+                                    {% for m in list_may %}<option value="{{ m }}" {% if row['Máy POS'] == m %}selected{% endif %}>{{ m }}</option>{% endfor %}
+                                    {% if row['Máy POS'] not in list_may %}<option value="{{ row['Máy POS'] }}" selected>{{ row['Máy POS'] }}</option>{% endif %}
+                                </select>
+                            </td>
+                            <td><input type="text" name="so_lo" class="form-control form-control-sm inline-input" value="{{ row['Số Lô'] }}"></td>
+                            <td><input type="text" name="so_tien" class="form-control form-control-sm inline-input w-money js-amount" value="{{ "{:,.0f}".format(row['Số tiền']) }}" oninput="recalcInlineRow(this)"></td>
+                            <td><input type="text" name="thanh_tien_sau_phi" class="form-control form-control-sm inline-input w-money js-after" value="{{ "{:,.0f}".format(row['Số tiền'] - row['Phí trả Cty']) }}" readonly></td>
+                            <td><input type="text" name="phi_cty" class="form-control form-control-sm inline-input js-fee-percent" value="{{ row['Phí Cty %']|replace('%','') }}" oninput="recalcInlineRow(this)"></td>
+                            <td class="money text-warning js-fee-amount">{{ "{:,.0f}".format(row['Phí trả Cty']) }}</td>
+                            <td><input type="text" name="ghi_chu" class="form-control form-control-sm inline-input w-note" value="{{ row['Ghi chú'] if row['Ghi chú'] == row['Ghi chú'] else '' }}"></td>
+                            <td class="text-center">
+                                <div class="d-flex gap-1 justify-content-center">
+                                    <button type="submit" class="btn btn-success btn-action">Lưu</button>
+                                    <a href="/all_transactions?from_date={{ sel_from_date | urlencode }}&to_date={{ sel_to_date | urlencode }}&cong_ty={{ sel_cty | urlencode }}&may_pos={{ sel_may | urlencode }}" class="btn btn-secondary btn-action">Hủy</a>
+                                </div>
+                            </td>
+                        </form>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td class="text-center small">{{ row['Chi tiết ngày tháng'] }}</td>
+                        {% if show_owner_column %}
+                        <td class="fw-bold">{{ row['Tên Chủ POS'] }}</td>
+                        {% endif %}
+                        <td class="small">{{ row['Tên Công ty'] }}</td>
+                        <td class="small text-muted">{{ row['Máy POS'] }}</td>
+                        <td class="text-center fw-bold text-danger">{{ row['Số Lô'] }}</td>
+                        <td class="money">{{ "{:,.0f}".format(row['Số tiền']) }}</td>
+                        <td class="money text-success">{{ "{:,.0f}".format(row['Thành tiền sau phí']) }}</td>
+                        <td class="text-center">{{ row['Phí Cty %'] }}</td>
+                        <td class="money text-warning">{{ "{:,.0f}".format(row['Phí trả Cty']) }}</td>
+                        <td class="small">{{ row['Ghi chú'] if row['Ghi chú'] == row['Ghi chú'] else '' }}</td>
+                        <td class="text-center">
+                            <div class="d-flex gap-1 justify-content-center">
+                                <a href="/all_transactions?from_date={{ sel_from_date | urlencode }}&to_date={{ sel_to_date | urlencode }}&cong_ty={{ sel_cty | urlencode }}&may_pos={{ sel_may | urlencode }}&edit_idx={{ row['id'] }}" class="btn btn-warning btn-action">S</a>
+                                <a href="/delete_transaction/{{ row['id'] }}" class="btn btn-danger btn-action" onclick="return confirm('Xóa?')">X</a>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                    {% if not transactions %}
+                    <tr><td colspan="{{ 11 if show_owner_column else 10 }}" class="text-center text-muted py-4">Không có giao dịch theo bộ lọc hiện tại.</td></tr>
+                    {% endif %}
+                </tbody>
+                {% if transactions %}
+                <tfoot>
+                    <tr class="table-total-row">
+                        <td colspan="{{ 5 if show_owner_column else 4 }}" class="text-center">TỔNG TẤT CẢ ({{ summary.count }} GD)</td>
+                        <td class="money text-primary">{{ "{:,.0f}".format(summary.total_amount) }}</td>
+                        <td class="money text-success">{{ "{:,.0f}".format(summary.total_after_customer_fee) }}</td>
+                        <td class="text-center">-</td>
+                        <td class="money text-warning">{{ "{:,.0f}".format(summary.total_company_fee) }}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+                {% endif %}
+            </table>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='money-input.js') }}?v=20260511"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/static/sw.js');
+            });
+        }
+
+        const companyMap = {{ company_map | tojson }};
+        const selMay = "{{ sel_may }}";
+        const companySelect = document.getElementById('company-select');
+        const maySelect = document.getElementById('may-select');
+
+        function allMachinesFromMap(map) {
+            return Array.from(new Set(Object.values(map).flat())).sort();
+        }
+
+        function updateMachines() {
+            const company = companySelect.value;
+            maySelect.innerHTML = '';
+            const defaultOption = new Option("-- Máy --", "Tất cả");
+            maySelect.add(defaultOption);
+            const source = company === "Tất cả" ? allMachinesFromMap(companyMap) : (companyMap[company] || []);
+            source.forEach((machine) => {
+                const option = new Option(machine, machine);
+                if (machine === selMay) option.selected = true;
+                maySelect.add(option);
+            });
+            if (selMay === "Tất cả" || !source.includes(selMay)) defaultOption.selected = true;
+        }
+
+        function parseMoney(value) {
+            return MoneyInput.parse(value);
+        }
+
+        function formatMoney(value) {
+            return MoneyInput.formatDigits(String(Math.round(value)));
+        }
+
+        function recalcInlineRow(input) {
+            recalcRow(input.closest('tr'));
+        }
+
+        function recalcRow(row) {
+            if (!row) return;
+            const amount = parseMoney(row.querySelector('.js-amount')?.value);
+            const fee = parseFloat(row.querySelector('.js-fee-percent')?.value) || 0;
+            const feeAmount = amount * fee / 100;
+            const afterInput = row.querySelector('.js-after');
+            const feeCell = row.querySelector('.js-fee-amount');
+            if (afterInput) {
+                afterInput.value = amount > 0 ? formatMoney(amount - feeAmount) : "";
+            }
+            if (feeCell) {
+                feeCell.textContent = amount > 0 ? formatMoney(feeAmount) : "0";
+            }
+        }
+
+        companySelect.addEventListener('change', updateMachines);
+        updateMachines();
+
+        document.querySelectorAll('.row-editing').forEach((row) => {
+            const amountInput = row.querySelector('.js-amount');
+            const feeInput = row.querySelector('.js-fee-percent');
+            [amountInput, feeInput].forEach((input) => {
+                if (input) input.addEventListener('input', () => recalcInlineRow(input));
+            });
+            row.querySelectorAll('.w-money').forEach((input) => {
+                input.addEventListener('blur', () => {
+                    const value = parseMoney(input.value);
+                    if (value) input.value = formatMoney(value);
+                    recalcInlineRow(input);
+                });
+            });
+            recalcRow(row);
+        });
+    </script>
+</body>
+</html>
